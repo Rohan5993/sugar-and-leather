@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sugar &amp; Leather — Human at the core, unbreakable under pressure</title>
+<meta name="description" content="World-class executive coaching and strategic AI leadership for the people and organizations brave enough to lead through change.">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+</head>
+<body class="on-obsidian">
+
+<!-- ============ LOADER ============ -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <img src="assets/logo-mark-cream-flat.png" alt="Sugar &amp; Leather">
+    <div class="loader-bar"><i id="loaderFill"></i></div>
+    <div class="loader-word">Built. Not given.</div>
+  </div>
+</div>
+
+<!-- ============ CURSOR ============ -->
+<div class="cursor" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand" data-magnetic>
+      <img src="assets/logo-mark-cream-flat.png" alt="">
+      <span class="brand-name">Sugar <span class="brand-amp">&amp;</span> Leather</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#ecosystem" class="nav-link">Ecosystem</a>
+      <a href="#atelier" class="nav-link">Practices</a>
+      <a href="#founder" class="nav-link">Founder</a>
+      <a href="#faq" class="nav-link">Enquiry</a>
+    </nav>
+    <a href="#cta" class="btn btn-outline" data-magnetic><span class="lab">Request an introduction</span><i data-lucide="arrow-right"></i></a>
+    <button class="nav-burger" id="burger" aria-label="Open menu"><i data-lucide="menu"></i></button>
+  </div>
+</header>
+
+<!-- mobile drawer -->
+<div class="nav-drawer" id="drawer">
+  <button class="nd-close" id="drawerClose" aria-label="Close menu"><i data-lucide="x"></i></button>
+  <a href="#ecosystem" data-drawer-link>Ecosystem</a>
+  <a href="#atelier" data-drawer-link>Practices</a>
+  <a href="#founder" data-drawer-link>Founder</a>
+  <a href="#faq" data-drawer-link>Enquiry</a>
+  <a href="#cta" data-drawer-link>Request an introduction</a>
+</div>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" data-screen-label="Hero">
+    <div class="hero-bg" id="heroBg" style="background-image:url('assets/photo-coaching-library.png')"></div>
+    <div class="hero-scrim"></div>
+    <div class="hero-grain"></div>
+    <div class="hero-content wrap">
+      <div class="hero-center">
+        <div class="eyebrow center hero-eyebrow" data-reveal data-reveal-delay="1">Executive coaching &amp; strategic AI leadership</div>
+        <h1 class="display split" id="heroTitle">Stay deeply human while<br>you lead the machine</h1>
+        <p class="hero-sub" data-reveal data-reveal-delay="3">World-class coaching and AI leadership for the people and organizations brave enough to lead through change and growth in today&rsquo;s world.</p>
+        <div class="hero-actions" data-reveal data-reveal-delay="4">
+          <a href="#cta" class="btn btn-cream" data-magnetic><span class="lab">Begin a conversation</span><i data-lucide="arrow-right"></i></a>
+          <a href="#ecosystem" class="btn btn-outline" data-magnetic><span class="lab">Explore the ecosystem</span></a>
+        </div>
+      </div>
+    </div>
+    <!-- ============ MARQUEE (in-hero) ============ -->
+    <div class="strip" aria-hidden="true">
+      <div class="strip-track" id="strip">
+        <span class="strip-item">Earned</span><span class="strip-item"><span class="dot"></span>Strong</span><span class="strip-item"><span class="dot"></span>Reflective</span><span class="strip-item"><span class="dot"></span>Human at the core</span><span class="strip-item"><span class="dot"></span>Unbreakable under pressure</span>
+        <span class="strip-item"><span class="dot"></span>Earned</span><span class="strip-item"><span class="dot"></span>Strong</span><span class="strip-item"><span class="dot"></span>Reflective</span><span class="strip-item"><span class="dot"></span>Human at the core</span><span class="strip-item"><span class="dot"></span>Unbreakable under pressure</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ECOSYSTEM ============ -->
+  <section class="section" id="ecosystem" data-screen-label="Ecosystem">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow" data-reveal>The ecosystem &mdash; four practices</div>
+          <h2 class="display split" style="margin-top:22px">Four ways we build leaders</h2>
+        </div>
+        <p class="lead" data-reveal data-reveal-delay="2">Not software. Not a program. A connected set of practices &mdash; each one a different intensity of the same fire.</p>
+      </div>
+      <div class="eco-grid">
+        <a href="#atelier" class="eco-card c-a" data-magnetic data-tilt>
+          <div class="eco-photo" style="background-image:url('assets/photo-coaching-sage.png')"></div>
+          <div class="eco-veil"></div>
+          <div class="eco-go"><i data-lucide="arrow-up-right"></i></div>
+          <span class="eco-idx">01 / Coaching</span>
+          <h3 class="eco-name">Atelier</h3>
+          <p class="eco-desc">Private, intensive coaching for the singular leader. One leader, one master coach, a year that changes the trajectory.</p>
+        </a>
+        <a href="#forge" class="eco-card c-b" data-magnetic data-tilt>
+          <div class="eco-photo" style="background-image:url('assets/photo-coaching-library.png')"></div>
+          <div class="eco-veil"></div>
+          <div class="eco-go"><i data-lucide="arrow-up-right"></i></div>
+          <span class="eco-idx">02 / Teams</span>
+          <h3 class="eco-name">Forge</h3>
+          <p class="eco-desc">Whole leadership teams, tempered under pressure. Heat, then shape.</p>
+        </a>
+        <a href="#compass" class="eco-card c-c" data-magnetic data-tilt>
+          <div class="eco-photo" style="background-image:url('assets/photo-night-work.png')"></div>
+          <div class="eco-veil"></div>
+          <div class="eco-go"><i data-lucide="arrow-up-right"></i></div>
+          <span class="eco-idx">03 / Advisory</span>
+          <h3 class="eco-name">Compass</h3>
+          <p class="eco-desc">A steady hand on the wheel of your AI strategy. Direction, not decks.</p>
+        </a>
+        <a href="#lexicon" class="eco-card c-d" data-magnetic data-tilt>
+          <div class="eco-photo" style="background-image:url('assets/photo-study-light.png')"></div>
+          <div class="eco-veil"></div>
+          <div class="eco-go"><i data-lucide="arrow-up-right"></i></div>
+          <span class="eco-idx">04 / Platform</span>
+          <h3 class="eco-name">Lexicon</h3>
+          <p class="eco-desc">A living curriculum that makes executives genuinely fluent in AI. Understanding, not jargon &mdash; fluency that compounds.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCT SHOWCASES (stack on scroll) ============ -->
+  <div class="show-stack">
+  <div class="show-sticky" style="--stack-i: 1">
+  <!-- ============ SHOWCASE 1 — ATELIER ============ -->
+  <section class="show" id="atelier" data-screen-label="Atelier">
+    <div class="wrap">
+      <div class="show-grid">
+        <div class="show-text">
+          <div class="show-meta"><span class="num">01</span><span class="eyebrow" data-reveal>Bespoke executive coaching</span></div>
+          <h2 class="show-name display split">Atelier</h2>
+          <p class="show-tagline" data-reveal data-reveal-delay="2">One leader. One coach. A year that changes the trajectory.</p>
+          <p class="show-body" data-reveal data-reveal-delay="3">A single, uninterrupted relationship with a master coach. We work in quarterly arcs &mdash; uncovering the patterns beneath the performance, then rebuilding them deliberately. Confidential by design, intense by intention.</p>
+          <ul class="caps">
+            <li class="cap" data-reveal><span class="cap-ic"><i data-lucide="infinity"></i></span><span><span class="cap-t">Quarterly transformation arcs</span><span class="cap-d">Structured cycles of insight, practice, and integration.</span></span></li>
+            <li class="cap" data-reveal data-reveal-delay="1"><span class="cap-ic"><i data-lucide="user-round"></i></span><span><span class="cap-t">One-to-one with a master coach</span><span class="cap-d">No pods, no juniors. The same trusted voice throughout.</span></span></li>
+            <li class="cap" data-reveal data-reveal-delay="2"><span class="cap-ic"><i data-lucide="lock"></i></span><span><span class="cap-t">Confidential by design</span><span class="cap-d">A room where the most senior leader can be unguarded.</span></span></li>
+          </ul>
+          <div class="show-actions" data-reveal data-reveal-delay="3">
+            <a href="#cta" class="btn btn-cream" data-magnetic><span class="lab">Apply for Atelier</span><i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="show-visual" data-parallax="0.06">
+          <div class="carousel" data-carousel>
+            <div class="car-frame">
+              <div class="car-track">
+                <div class="car-slide"><div class="cs-photo" style="background-image:url('assets/photo-coaching-sage.png')"></div><div class="cs-veil"></div><span class="cs-caption">The room</span></div>
+                <div class="car-slide"><div class="cs-ui">
+                  <div class="ui-bar"><span class="d"></span><span class="d"></span><span class="ui-tag">Atelier · Arc 01</span></div>
+                  <div class="ui-line" style="width:72%"></div><div class="ui-line" style="width:54%"></div><div class="ui-line" style="width:64%"></div>
+                  <div class="ui-card"><div class="ui-h">Quarter one</div><div class="ui-sub">Patterns mapped · trust established</div><div class="ui-meter"><i style="width:34%"></i></div></div>
+                </div><span class="cs-caption">The arc</span></div>
+                <div class="car-slide"><div class="cs-photo" style="background-image:url('assets/photo-study-light.png')"></div><div class="cs-veil"></div><span class="cs-caption">The work</span></div>
+              </div>
+            </div>
+            <div class="car-ctrl">
+              <div class="car-dots" data-dots></div>
+              <div class="car-arrows"><button class="car-arrow" data-prev aria-label="Previous"><i data-lucide="arrow-left"></i></button><button class="car-arrow" data-next aria-label="Next"><i data-lucide="arrow-right"></i></button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <div class="show-sticky" style="--stack-i: 2">
+  <!-- ============ SHOWCASE 2 — FORGE (reversed) ============ -->
+  <section class="show reverse" id="forge" data-screen-label="Forge">
+    <div class="wrap">
+      <div class="show-grid">
+        <div class="show-text">
+          <div class="show-meta"><span class="num">02</span><span class="eyebrow" data-reveal>Leadership team intensives</span></div>
+          <h2 class="show-name display split">Forge</h2>
+          <p class="show-tagline" data-reveal data-reveal-delay="2">Heat, then shape. Teams that hold when it matters.</p>
+          <p class="show-body" data-reveal data-reveal-delay="3">Immersive intensives where an entire leadership team is pressure-tested together. We rehearse the hardest decisions before they arrive &mdash; so that under real pressure, the team bends without breaking.</p>
+          <ul class="caps">
+            <li class="cap" data-reveal><span class="cap-ic"><i data-lucide="flame"></i></span><span><span class="cap-t">Cohort immersions</span><span class="cap-d">Multi-day intensives, off the grid, fully present.</span></span></li>
+            <li class="cap" data-reveal data-reveal-delay="1"><span class="cap-ic"><i data-lucide="git-branch"></i></span><span><span class="cap-t">Decision rehearsals</span><span class="cap-d">The high-stakes calls, practiced before they are real.</span></span></li>
+            <li class="cap" data-reveal data-reveal-delay="2"><span class="cap-ic"><i data-lucide="users-round"></i></span><span><span class="cap-t">Pressure-tested alignment</span><span class="cap-d">Friction surfaced and resolved, not buried.</span></span></li>
+          </ul>
+          <div class="show-actions" data-reveal data-reveal-delay="3">
+            <a href="#cta" class="btn btn-cream" data-magnetic><span class="lab">Bring Forge to your team</span><i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="show-visual" data-parallax="0.06">
+          <div class="carousel" data-carousel>
+            <div class="car-frame">
+              <div class="car-track">
+                <div class="car-slide"><div class="cs-photo" style="background-image:url('assets/photo-coaching-library.png')"></div><div class="cs-veil"></div><span class="cs-caption">The table</span></div>
+                <div class="car-slide"><div class="cs-ui">
+                  <div class="ui-bar"><span class="d"></span><span class="d"></span><span class="ui-tag">Forge · Cohort</span></div>
+                  <div class="ui-line" style="width:60%"></div><div class="ui-line" style="width:78%"></div><div class="ui-line" style="width:48%"></div>
+                  <div class="ui-card"><div class="ui-h">Alignment</div><div class="ui-sub">Eight leaders · one decision</div><div class="ui-meter"><i style="width:82%"></i></div></div>
+                </div><span class="cs-caption">The rehearsal</span></div>
+                <div class="car-slide"><div class="cs-photo" style="background-image:url('assets/photo-night-work.png')"></div><div class="cs-veil"></div><span class="cs-caption">The pressure</span></div>
+              </div>
+            </div>
+            <div class="car-ctrl">
+              <div class="car-dots" data-dots></div>
+              <div class="car-arrows"><button class="car-arrow" data-prev aria-label="Previous"><i data-lucide="arrow-left"></i></button><button class="car-arrow" data-next aria-label="Next"><i data-lucide="arrow-right"></i></button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <div class="show-sticky" style="--stack-i: 3">
+  <!-- ============ SHOWCASE 3 — COMPASS ============ -->
+  <section class="show" id="compass" data-screen-label="Compass">
+    <div class="wrap">
+      <div class="show-grid">
+        <div class="show-text">
+          <div class="show-meta"><span class="num">03</span><span class="eyebrow" data-reveal>Fractional AI leadership</span></div>
+          <h2 class="show-name display split">Compass</h2>
+          <p class="show-tagline" data-reveal data-reveal-delay="2">Strategy is a direction, not a deck. We hold the line with you.</p>
+          <p class="show-body" data-reveal data-reveal-delay="3">An embedded, senior hand on your AI strategy &mdash; part fractional Chief AI Officer, part trusted counsel. We translate ambition into roadmaps that survive contact with reality, and sit with you in the room when the decisions are hard.</p>
+          <ul class="caps">
+            <li class="cap" data-reveal><span class="cap-ic"><i data-lucide="compass"></i></span><span><span class="cap-t">Embedded advisory</span><span class="cap-d">In your cadence, in your context &mdash; not from the outside.</span></span></li>
+            <li class="cap" data-reveal data-reveal-delay="1"><span class="cap-ic"><i data-lucide="presentation"></i></span><span><span class="cap-t">Board-level fluency</span><span class="cap-d">The narrative your board needs, without the hand-waving.</span></span></li>
+            <li class="cap" data-reveal data-reveal-delay="2"><span class="cap-ic"><i data-lucide="route"></i></span><span><span class="cap-t">Roadmaps that survive contact</span><span class="cap-d">Sequenced, fundable, and honest about the trade-offs.</span></span></li>
+          </ul>
+          <div class="show-actions" data-reveal data-reveal-delay="3">
+            <a href="#cta" class="btn btn-cream" data-magnetic><span class="lab">Engage Compass</span><i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="show-visual" data-parallax="0.06">
+          <div class="carousel" data-carousel>
+            <div class="car-frame">
+              <div class="car-track">
+                <div class="car-slide"><div class="cs-ui">
+                  <div class="ui-bar"><span class="d"></span><span class="d"></span><span class="ui-tag">Compass · Roadmap</span></div>
+                  <div class="ui-line" style="width:84%"></div><div class="ui-line" style="width:56%"></div><div class="ui-line" style="width:70%"></div>
+                  <div class="ui-card"><div class="ui-h">Horizon 2</div><div class="ui-sub">Capability before scale</div><div class="ui-meter"><i style="width:58%"></i></div></div>
+                </div><span class="cs-caption">The roadmap</span></div>
+                <div class="car-slide"><div class="cs-photo" style="background-image:url('assets/photo-night-work.png')"></div><div class="cs-veil"></div><span class="cs-caption">The build</span></div>
+                <div class="car-slide"><div class="cs-photo" style="background-image:url('assets/photo-coaching-library.png')"></div><div class="cs-veil"></div><span class="cs-caption">The counsel</span></div>
+              </div>
+            </div>
+            <div class="car-ctrl">
+              <div class="car-dots" data-dots></div>
+              <div class="car-arrows"><button class="car-arrow" data-prev aria-label="Previous"><i data-lucide="arrow-left"></i></button><button class="car-arrow" data-next aria-label="Next"><i data-lucide="arrow-right"></i></button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <div class="show-sticky" style="--stack-i: 4">
+  <!-- ============ SHOWCASE 4 — LEXICON (reversed) ============ -->
+  <section class="show reverse" id="lexicon" data-screen-label="Lexicon">
+    <div class="wrap">
+      <div class="show-grid">
+        <div class="show-text">
+          <div class="show-meta"><span class="num">04</span><span class="eyebrow" data-reveal>The AI-fluency platform</span></div>
+          <h2 class="show-name display split">Lexicon</h2>
+          <p class="show-tagline" data-reveal data-reveal-delay="2">Understanding, not jargon. Fluency that compounds.</p>
+          <p class="show-body" data-reveal data-reveal-delay="3">A living curriculum that makes executives genuinely fluent in AI &mdash; not performatively, but practically. Adaptive paths meet leaders where they are and stay current as the field moves, so the language never goes stale.</p>
+          <ul class="caps">
+            <li class="cap" data-reveal><span class="cap-ic"><i data-lucide="waypoints"></i></span><span><span class="cap-t">Adaptive learning paths</span><span class="cap-d">Tailored to role, sector, and starting point.</span></span></li>
+            <li class="cap" data-reveal data-reveal-delay="1"><span class="cap-ic"><i data-lucide="book-open"></i></span><span><span class="cap-t">Plain-language frameworks</span><span class="cap-d">Mental models that hold up in a real boardroom.</span></span></li>
+            <li class="cap" data-reveal data-reveal-delay="2"><span class="cap-ic"><i data-lucide="refresh-cw"></i></span><span><span class="cap-t">Always current</span><span class="cap-d">Updated continuously as the frontier shifts.</span></span></li>
+          </ul>
+          <div class="show-actions" data-reveal data-reveal-delay="3">
+            <a href="#cta" class="btn btn-cream" data-magnetic><span class="lab">Preview Lexicon</span><i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="show-visual" data-parallax="0.06">
+          <div class="carousel" data-carousel>
+            <div class="car-frame">
+              <div class="car-track">
+                <div class="car-slide"><div class="cs-photo" style="background-image:url('assets/photo-study-light.png')"></div><div class="cs-veil"></div><span class="cs-caption">The study</span></div>
+                <div class="car-slide"><div class="cs-ui">
+                  <div class="ui-bar"><span class="d"></span><span class="d"></span><span class="ui-tag">Lexicon · Path</span></div>
+                  <div class="ui-line" style="width:66%"></div><div class="ui-line" style="width:80%"></div><div class="ui-line" style="width:50%"></div>
+                  <div class="ui-card"><div class="ui-h">Fluency</div><div class="ui-sub">Module 7 of 12 · adaptive</div><div class="ui-meter"><i style="width:62%"></i></div></div>
+                </div><span class="cs-caption">The path</span></div>
+                <div class="car-slide"><div class="cs-photo" style="background-image:url('assets/photo-night-work.png')"></div><div class="cs-veil"></div><span class="cs-caption">The practice</span></div>
+              </div>
+            </div>
+            <div class="car-ctrl">
+              <div class="car-dots" data-dots></div>
+              <div class="car-arrows"><button class="car-arrow" data-prev aria-label="Previous"><i data-lucide="arrow-left"></i></button><button class="car-arrow" data-next aria-label="Next"><i data-lucide="arrow-right"></i></button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  </div>
+
+  <!-- ============ FOUNDER ============ -->
+  <section class="section founder" id="founder" data-screen-label="Founder">
+    <div class="wrap">
+      <div class="founder-grid">
+        <div class="founder-portrait" data-parallax="0.05" data-reveal>
+          <img src="assets/photo-coaching-sage.png" alt="Founder portrait">
+          <span class="fp-tag">Founder &amp; Principal Coach</span>
+        </div>
+        <div class="founder-text">
+          <div class="eyebrow" data-reveal>A note from our founder</div>
+          <p class="founder-quote split">The leaders I admire most were never the loudest. They stayed <span class="hl">human</span> when the pressure said otherwise</p>
+          <p class="founder-body" data-reveal data-reveal-delay="2">I built Sugar &amp; Leather for the few who refuse to choose between ambition and humanity. The ones leading their organizations through the most consequential technological shift of our lifetimes &mdash; and who understand that the answer is not to become more like the machine, but to become more deeply themselves.</p>
+          <p class="founder-body" data-reveal data-reveal-delay="3">We coach the human and advise the strategy, because at this altitude the two cannot be separated. Everything here is earned, not given. That is the whole philosophy, stitched into the collar.</p>
+          <div class="founder-sign" data-reveal data-reveal-delay="4">
+            <span class="sig">Vivienne Marchetti</span>
+            <span class="who"><b>Vivienne Marchetti</b>Founder &amp; Principal Coach</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq" data-screen-label="FAQ">
+    <div class="wrap">
+      <div class="faq-grid">
+        <div class="faq-aside">
+          <div class="eyebrow" data-reveal>Enquiry</div>
+          <h2 class="display split" style="margin-top:20px">Questions, answered plainly</h2>
+          <span class="maxim" data-reveal data-reveal-delay="2">Earned. Strong. Reflective.</span>
+        </div>
+        <div class="faq-list" id="faqList">
+          <div class="faq-item">
+            <button class="faq-q"><span class="q-ic"></span><span>Who do you work with</span></button>
+            <div class="faq-a"><div class="faq-a-inner">Senior leaders and the organizations they steward &mdash; typically executives, founders, and boards navigating AI transformation. We are selective by design, and we say no far more often than we say yes.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q"><span class="q-ic"></span><span>Is this coaching, or consulting</span></button>
+            <div class="faq-a"><div class="faq-a-inner">Both, and neither in the usual sense. We coach the human and advise the strategy, because at the level we work, the two cannot be pulled apart. You are not buying a deliverable &mdash; you are entering a relationship.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q"><span class="q-ic"></span><span>How long does an engagement last</span></button>
+            <div class="faq-a"><div class="faq-a-inner">Most begin with a single quarter and deepen from there. Transformation is not a sprint; we stay as long as the work honestly requires, and not a session longer.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q"><span class="q-ic"></span><span>What makes Sugar &amp; Leather different</span></button>
+            <div class="faq-a"><div class="faq-a-inner">Restraint. We take few clients, say little publicly, and let the work speak. The darkness is deliberate &mdash; it signals that we do not need to shout.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q"><span class="q-ic"></span><span>How do we begin</span></button>
+            <div class="faq-a"><div class="faq-a-inner">With a conversation. Request an introduction below and we will explore whether the fit is right. It usually becomes clear, to both of us, quite quickly.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta" id="cta" data-screen-label="CTA">
+    <div class="cta-glow"></div>
+    <div class="wrap">
+      <img class="cta-mark" src="assets/logo-mark-lavender-flat.png" alt="" data-reveal>
+      <h2 class="display split">Some companies are given. <br><span class="serif-i">You will be built</span></h2>
+      <p class="cta-sub" data-reveal data-reveal-delay="2">If you are leading through change and refuse to lose your humanity in the process, we should talk. Introductions are limited, and considered.</p>
+      <div class="cta-actions" data-reveal data-reveal-delay="3">
+        <a href="/cdn-cgi/l/email-protection#86eee3eaeae9c6f5f3e1e7f4e7e8e2eae3e7f2eee3f4a8e5e9eb" class="btn btn-cream" data-magnetic><span class="lab">Request an introduction</span><i data-lucide="arrow-right"></i></a>
+        <a href="#ecosystem" class="btn btn-outline" data-magnetic><span class="lab">Revisit the ecosystem</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" data-screen-label="Footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#top" class="brand">
+            <img src="assets/logo-mark-cream-flat.png" alt="Sugar & Leather" style="height:38px">
+          </a>
+          <p class="footer-mission">To humanize artificial intelligence by staying deeply human ourselves.<br><span class="maxim">Built. Not given.</span></p>
+        </div>
+        <div class="footer-col">
+          <h4>Ecosystem</h4>
+          <a href="#atelier">Atelier</a>
+          <a href="#forge">Forge</a>
+          <a href="#compass">Compass</a>
+          <a href="#lexicon">Lexicon</a>
+        </div>
+        <div class="footer-col">
+          <h4>Firm</h4>
+          <a href="#founder">Founder</a>
+          <a href="#faq">Enquiry</a>
+          <a href="#ecosystem">Philosophy</a>
+          <a href="#cta">Introductions</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="/cdn-cgi/l/email-protection#036b666f6f6c437076646271626d676f6662776b66712d606c6e"><span class="__cf_email__" data-cfemail="a5cdc0c9c9cae5d6d0c2c4d7c4cbc1c9c0c4d1cdc0d78bc6cac8">[email&#160;protected]</span></a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Instagram</a>
+          <a href="#">New York · London</a>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span class="small">&copy; 2026 Sugar &amp; Leather AI. By appointment only.</span>
+        <span class="legal"><a href="#" class="footer-link" style="color:var(--mid-gray)">Privacy</a><a href="#" class="footer-link" style="color:var(--mid-gray)">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+/* ============================================================
+   SUGAR & LEATHER — Foundational tokens (color + type)
+   "Human at the core, unbreakable under pressure."
+   ============================================================ */
+
+/* ---- Webfonts ---------------------------------------------
+   Headline : Cormorant Garamond (Google Fonts) — brand exact
+   Code     : Courier Prime (Google Fonts) — brand exact
+   Body/Sub : Helvetica Neue LT Std 55 Roman — PROPRIETARY.
+              The @font-face below is pre-wired to fonts/. Drop the
+              licensed files in (see fonts/README.md) and the whole
+              system upgrades automatically — no other edits needed.
+              Until then it falls back to the native Helvetica stack.
+------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+
+/* Pre-wired — activates the instant the licensed files exist in fonts/.
+   Missing files fail silently and fall back to the system stack. */
+@font-face {
+  font-family: 'Helvetica Neue LT Std';
+  src: url('fonts/HelveticaNeueLTStd-Roman.woff2') format('woff2'),
+       url('fonts/HelveticaNeueLTStd-Roman.woff')  format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* ---------- PRIMARY PALETTE ---------- */
+  --obsidian:   #0E0C0F; /* black w/ a barely-perceptible purple undertone */
+  --cream:      #EDE8E1; /* white that has lived a little */
+  --lavender:   #C5B8D4; /* the one accent — max 20% of any composition */
+
+  /* ---------- SECONDARY PALETTE ---------- */
+  --charcoal:   #2C2830; /* large panels on top of Obsidian */
+  --deep-plum:  #3D3347; /* subheads on cream, hover states, separators */
+  --mid-gray:   #6B6570; /* body text on cream, captions */
+  --warm-white: #F7F4F0; /* large panels on top of Cream */
+  --silver:     #A8A5AE; /* body text on obsidian, icons, metadata */
+  --mist:       #D8D3DE; /* divider lines, subtle separators on cream */
+
+  /* ---------- SEMANTIC — LIGHT (Cream surface) ---------- */
+  --bg:            var(--cream);
+  --panel:         var(--warm-white);
+  --fg1:           var(--obsidian);   /* headlines */
+  --fg2:           var(--deep-plum);  /* subheadlines */
+  --fg3:           var(--mid-gray);   /* body + captions */
+  --accent:        var(--lavender);
+  --divider:       var(--mist);
+  --hover:         var(--deep-plum);
+
+  /* ---------- TYPE FAMILIES ---------- */
+  --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  /* Brand-specified fallback for the proprietary face is Inter. */
+  --font-body:    'Helvetica Neue LT Std', 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-mono:    'Courier Prime', 'Courier New', Courier, monospace;
+
+  /* ---------- TYPE SCALE (8px base rhythm) ----------
+     Brand rule: headline = 3x body+, subhead = 2x body.
+     Body ranges 8–24px; we anchor body at 18px. */
+  --fs-display-xl: 88px;
+  --fs-display:    64px;
+  --fs-h1:         54px;
+  --fs-h2:         40px;
+  --fs-subhead:    36px;  /* ~2x body */
+  --fs-lead:       24px;
+  --fs-body:       18px;  /* anchor */
+  --fs-small:      15px;
+  --fs-caption:    13px;
+  --fs-code:       16px;
+
+  /* ---------- WEIGHTS ---------- */
+  --w-body: 400;
+  --w-medium: 500;
+  --w-display: 700; /* Cormorant Garamond Bold */
+
+  /* ---------- SPACING (8px grid) ---------- */
+  --sp-1: 4px;  --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 24px; --sp-6: 32px; --sp-7: 48px; --sp-8: 64px;
+  --sp-9: 96px; --sp-10: 128px;
+
+  /* Horizontal inset — matches nav logo (left) and header CTA (right) */
+  --page-gutter: 48px;
+
+  /* ---------- RADII ----------
+     Restrained, leather-goods edges. Sharp by default. */
+  --radius-sm: 2px;
+  --radius:    6px;
+  --radius-lg: 12px;
+  --radius-pill: 999px;
+
+  /* ---------- ELEVATION ----------
+     Light, low, never floaty. Shadows are soft & warm-black. */
+  --shadow-sm: 0 1px 2px rgba(14,12,15,.06);
+  --shadow:    0 8px 24px -8px rgba(14,12,15,.18);
+  --shadow-lg: 0 24px 64px -16px rgba(14,12,15,.32);
+
+  /* ---------- MOTION ----------
+     Quiet confidence: slow, eased, no bounce. */
+  --ease: cubic-bezier(.2,.6,.2,1);
+  --dur: 240ms;
+}
+
+/* ---------- DARK CONTEXT (Obsidian surface) ----------
+   Apply .on-obsidian to any container painted Obsidian. */
+.on-obsidian {
+  --bg:      var(--obsidian);
+  --panel:   var(--charcoal);
+  --fg1:     var(--cream);     /* headlines */
+  --fg2:     var(--lavender);  /* subheadlines */
+  --fg3:     var(--silver);    /* body + metadata */
+  --divider: var(--deep-plum);
+  --hover:   var(--lavender);
+  color: var(--fg3);
+  background: var(--bg);
+}
+
+/* ============================================================
+   SEMANTIC TYPE — opt in via these classes or copy the rules
+   ============================================================ */
+.sl-display-xl,
+.sl-display,
+.sl-h1, .sl-h2 {
+  font-family: var(--font-display);
+  font-weight: var(--w-display);
+  line-height: 1;            /* leading 100% of font size */
+  letter-spacing: 0;          /* tracking 0 */
+  color: var(--fg1);
+  text-wrap: balance;
+}
+.sl-display-xl { font-size: var(--fs-display-xl); }
+.sl-display    { font-size: var(--fs-display); }
+.sl-h1         { font-size: var(--fs-h1); }
+.sl-h2         { font-size: var(--fs-h2); font-weight: 600; }
+
+/* Sub-headline — Helvetica, 2x body, leading 100%, tracking 0, no punctuation */
+.sl-subhead {
+  font-family: var(--font-body);
+  font-weight: var(--w-body);
+  font-size: var(--fs-subhead);
+  line-height: 1;          /* spec: leading 100% of font size */
+  letter-spacing: 0;        /* spec: tracking 0 */
+  color: var(--fg2);
+}
+
+.sl-lead {
+  font-family: var(--font-body);
+  font-weight: var(--w-body);
+  font-size: var(--fs-lead);
+  line-height: 1.5;
+  color: var(--fg3);
+}
+
+/* Body — Helvetica, sentence case with punctuation */
+.sl-body {
+  font-family: var(--font-body);
+  font-weight: var(--w-body);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  color: var(--fg3);
+}
+
+.sl-small   { font-family: var(--font-body); font-size: var(--fs-small); line-height: 1.5; color: var(--fg3); }
+
+/* Metadata — dates, categories, "last updated", captions, footnotes */
+.sl-caption {
+  font-family: var(--font-body);
+  font-size: var(--fs-caption);
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--silver);
+}
+
+/* Code & technical — Courier Prime only */
+.sl-code {
+  font-family: var(--font-mono);
+  font-size: var(--fs-code);
+  line-height: 1;
+  color: var(--fg2);
+}
+
+/* ---------- ACCENT HELPERS ---------- */
+.sl-accent { color: var(--accent); }
+.sl-divider { height: 1px; background: var(--divider); border: 0; }
