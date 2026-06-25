@@ -1,4 +1,5 @@
 import { asset } from '../lib/asset';
+import Reveal from './ui/Reveal';
 import SplitText from './ui/SplitText';
 import Button from './ui/Button';
 

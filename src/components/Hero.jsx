@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { asset } from '../lib/asset';
 import { useHeroParallax } from '../hooks/useParallax';
 import { HOMEPAGE_HERO } from '../data/siteContent';
