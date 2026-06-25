@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useHeroParallax } from '../hooks/useParallax';
+import { HOMEPAGE_HERO } from '../data/siteContent';
 import Eyebrow from './ui/Eyebrow';
 import Reveal from './ui/Reveal';
 import SplitText from './ui/SplitText';
@@ -29,21 +30,21 @@ export default function Hero({ ready }) {
       <div className="hero-content wrap">
         <div className="hero-center">
           <Reveal as={Eyebrow} center className="hero-eyebrow" delay={1}>
-            Executive coaching &amp; strategic AI leadership
+            {HOMEPAGE_HERO.eyebrow}
           </Reveal>
           <SplitText as="h1" className="display" id="heroTitle">
-            Stay deeply human while
-            <br />
-            you lead the machine
+            {HOMEPAGE_HERO.title}
           </SplitText>
           <Reveal as="p" className="hero-sub" delay={3}>
-            World-class coaching and AI leadership for the people and organizations brave enough to
-            lead through change and growth in today&apos;s world.
+            {HOMEPAGE_HERO.sub}
+          </Reveal>
+          <Reveal as="p" className="hero-sub" delay={3}>
+            {HOMEPAGE_HERO.trust}
           </Reveal>
           <Reveal className="hero-actions" delay={4}>
-            <Button href="#cta">Begin a conversation</Button>
-            <Button href="#ecosystem" variant="outline" showArrow={false}>
-              Explore the ecosystem
+            <Button href={HOMEPAGE_HERO.primaryCta.href}>{HOMEPAGE_HERO.primaryCta.label}</Button>
+            <Button href={HOMEPAGE_HERO.secondaryCta.href} variant="outline" showArrow={false}>
+              {HOMEPAGE_HERO.secondaryCta.label}
             </Button>
           </Reveal>
         </div>

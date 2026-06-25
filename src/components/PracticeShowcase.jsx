@@ -11,6 +11,18 @@ import {
   Waypoints,
   BookOpen,
   RefreshCw,
+  Landmark,
+  FileText,
+  Building2,
+  Coins,
+  TrendingUp,
+  Map,
+  Megaphone,
+  Target,
+  Code,
+  UserPlus,
+  Cpu,
+  Workflow,
 } from 'lucide-react';
 import { useParallax } from '../hooks/useParallax';
 import Eyebrow from './ui/Eyebrow';
@@ -32,6 +44,18 @@ const ICONS = {
   Waypoints,
   BookOpen,
   RefreshCw,
+  Landmark,
+  FileText,
+  Building2,
+  Coins,
+  TrendingUp,
+  Map,
+  Megaphone,
+  Target,
+  Code,
+  UserPlus,
+  Cpu,
+  Workflow,
 };
 
 function FeatureIcon({ name }) {
@@ -55,9 +79,11 @@ export default function PracticeShowcase({ practice }) {
             <SplitText as="h2" className="show-name display">
               {practice.name}
             </SplitText>
-            <Reveal as="p" className="show-tagline" delay={2}>
-              {practice.tagline}
-            </Reveal>
+            {practice.tagline ? (
+              <Reveal as="p" className="show-tagline" delay={2}>
+                {practice.tagline}
+              </Reveal>
+            ) : null}
             <Reveal as="p" className="show-body" delay={3}>
               {practice.body}
             </Reveal>

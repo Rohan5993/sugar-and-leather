@@ -1,4 +1,11 @@
-export const MARQUEE_ITEMS = ['Earned', 'Strong', 'Reflective', 'Human at the core', 'Unbreakable under pressure'];
+export const MARQUEE_ITEMS = [
+  'Capital',
+  'Leadership',
+  'Execution',
+  'Funding readiness',
+  'Business growth',
+  'Operational support',
+];
 
 export const ECOSYSTEM_CARDS = [
   {
@@ -9,7 +16,7 @@ export const ECOSYSTEM_CARDS = [
     index: '01',
     name: 'Capital Access & Grant Services',
     description:
-      'Funding strategy, grant writing, non-dilutive capital, operational readiness.',
+      'Identify, apply for, and secure grants, incentives, and non-dilutive funding opportunities while building the operational readiness required for long-term growth.',
   },
   {
     id: 'strategic-partnerships',
@@ -19,7 +26,7 @@ export const ECOSYSTEM_CARDS = [
     index: '02',
     name: 'Strategic Partnerships',
     description:
-      'Executive guidance + specialized service pods: Marketing, Sales, Dev, Recruitment.',
+      'Gain access to executive leadership and specialized teams that help execute growth initiatives across your organization.',
   },
   {
     id: 'aries-platform',
@@ -27,9 +34,9 @@ export const ECOSYSTEM_CARDS = [
     className: 'c-c',
     photo: '/assets/photo-night-work.png',
     index: '03',
-    name: 'ARIES Platform & Products',
+    name: 'Product Platforms',
     description:
-      'AI-native business operating system. Sequence CRM. Built for mid-market scale.',
+      'Leverage AI-native technology platforms, including Aries AI and Sequence, to streamline operations, revenue generation, and decision-making.',
   },
   {
     id: 'advanced-tech',
@@ -37,11 +44,221 @@ export const ECOSYSTEM_CARDS = [
     className: 'c-d',
     photo: '/assets/photo-study-light.png',
     index: '04',
-    name: 'Advanced Tech & Innovation',
+    name: 'Innovation & Community',
     description:
-      'AI governance, drone systems, distributed networks, patented IP.',
+      'Access research initiatives, innovation programs, and business communities designed to support founders and organizations at every stage.',
   },
 ];
+
+export const HOMEPAGE_ECOSYSTEM = {
+  eyebrow: 'The Sugar & Leather Ecosystem',
+  title: 'One Ecosystem. Multiple Growth Engines.',
+  intro:
+    'Growing businesses rarely fail because of ideas. They struggle because they lack access to capital, strategic leadership, or execution capacity. Sugar & Leather brings all three together through a connected ecosystem designed to help organizations grow sustainably.',
+};
+
+export const HOMEPAGE_SHOWCASES = [
+  {
+    id: 'capital-access',
+    num: '01',
+    eyebrow: 'Capital Access & Grant Services',
+    name: 'Funding Growth Without Giving Away Equity',
+    tagline: '',
+    body:
+      'We help businesses identify funding opportunities, prepare grant applications, improve operational readiness, and secure non-dilutive capital that accelerates growth.',
+    features: [
+      {
+        icon: 'Landmark',
+        title: 'Funding Strategy',
+        description: 'Identify the right capital pathways aligned to your growth stage and goals.',
+      },
+      {
+        icon: 'FileText',
+        title: 'Grant Writing & Submission',
+        description: 'Prepare compelling applications and manage submissions end to end.',
+      },
+      {
+        icon: 'Building2',
+        title: 'Government Incentives',
+        description: 'Navigate incentive programs designed to support business expansion.',
+      },
+      {
+        icon: 'Coins',
+        title: 'Non-Dilutive Capital Programs',
+        description: 'Secure funding that fuels growth without giving away equity.',
+      },
+      {
+        icon: 'TrendingUp',
+        title: 'Investment Readiness',
+        description: 'Build the operational and financial foundation funders expect.',
+      },
+      {
+        icon: 'Map',
+        title: 'Funding Roadmaps',
+        description: 'Sequence capital milestones across grants, incentives, and programs.',
+      },
+    ],
+    cta: { label: 'Explore Capital Services', href: '/products/capital-access' },
+    reverse: false,
+    slides: [
+      { type: 'photo', image: '/assets/photo-coaching-sage.png', caption: 'Capital strategy' },
+      {
+        type: 'ui',
+        caption: 'Funding roadmap',
+        tag: 'Capital Access · Roadmap',
+        title: 'Non-dilutive capital',
+        subtitle: 'Grants · incentives · readiness',
+        meter: '68%',
+        lines: ['72%', '58%', '64%'],
+      },
+      { type: 'photo', image: '/assets/photo-study-light.png', caption: 'Operational readiness' },
+    ],
+  },
+  {
+    id: 'strategic-partnerships',
+    num: '02',
+    eyebrow: 'Strategic Partnerships',
+    name: 'Executive Leadership Without Full-Time Overhead',
+    tagline:
+      'For organizations that are ready to scale, Sugar & Leather provides strategic partnership engagements that combine executive leadership with specialized execution teams.',
+    body:
+      'Each partnership is guided by experienced leaders and supported by dedicated operational pods that execute critical business functions.',
+    features: [
+      {
+        icon: 'Megaphone',
+        title: 'Marketing Pod',
+        description:
+          'Campaign execution, content systems, demand generation, brand growth, and marketing operations.',
+      },
+      {
+        icon: 'Target',
+        title: 'Sales Pod',
+        description:
+          'Pipeline development, outbound systems, sales operations, CRM processes, and revenue acceleration.',
+      },
+      {
+        icon: 'Code',
+        title: 'Development Pod',
+        description:
+          'Product development, software engineering, AI implementation, automation, and technical execution.',
+      },
+      {
+        icon: 'UserPlus',
+        title: 'Recruitment Pod',
+        description: 'Talent acquisition, hiring systems, workforce planning, and recruitment operations.',
+      },
+    ],
+    cta: { label: 'Explore Strategic Partnerships', href: '/products/strategic-partnerships' },
+    reverse: true,
+    slides: [
+      { type: 'photo', image: '/assets/photo-coaching-library.png', caption: 'Executive leadership' },
+      {
+        type: 'ui',
+        caption: 'Execution pods',
+        tag: 'Strategic Partnerships · Pods',
+        title: 'Growth execution',
+        subtitle: 'Marketing · sales · dev · recruitment',
+        meter: '82%',
+        lines: ['60%', '78%', '48%'],
+      },
+      { type: 'photo', image: '/assets/photo-night-work.png', caption: 'Operational delivery' },
+    ],
+  },
+  {
+    id: 'products-platforms',
+    num: '03',
+    eyebrow: 'Products & Platforms',
+    name: 'Technology Built for Modern Businesses',
+    tagline: '',
+    body:
+      'Our platforms help organizations operate more efficiently, make better decisions, and accelerate growth through AI-powered systems.',
+    features: [
+      {
+        icon: 'Cpu',
+        title: 'Aries AI',
+        description:
+          'An AI-native operating system designed to centralize workflows, automate execution, and improve organizational productivity.',
+      },
+      {
+        icon: 'Workflow',
+        title: 'Sequence',
+        description:
+          'An intelligent revenue platform combining CRM intelligence, buyer intent signals, and sales execution tools to help teams close more business.',
+      },
+    ],
+    cta: { label: 'Explore Products', href: '/products/aries-platform' },
+    reverse: false,
+    slides: [
+      { type: 'photo', image: '/assets/photo-night-work.png', caption: 'Aries AI' },
+      {
+        type: 'ui',
+        caption: 'Revenue intelligence',
+        tag: 'Sequence · Platform',
+        title: 'Pipeline velocity',
+        subtitle: 'CRM · intent · execution',
+        meter: '74%',
+        lines: ['66%', '80%', '58%'],
+      },
+      { type: 'photo', image: '/assets/photo-coaching-library.png', caption: 'Sequence' },
+    ],
+  },
+];
+
+export const HOMEPAGE_WHY = {
+  eyebrow: 'Why Companies Work With Sugar & Leather',
+  title: 'More than advice.',
+  titleHighlight: 'Real execution.',
+  items: [
+    {
+      question: 'Strategic Leadership',
+      answer:
+        'Access experienced operators and executives without the cost of building a full executive team.',
+    },
+    {
+      question: 'Execution Pods',
+      answer:
+        'Deploy specialized teams focused on outcomes rather than isolated consulting recommendations.',
+    },
+    {
+      question: 'Funding Expertise',
+      answer: 'Navigate grants and funding opportunities with experienced support.',
+    },
+    {
+      question: 'Integrated Ecosystem',
+      answer: 'Capital, leadership, technology, and execution delivered through a single partner.',
+    },
+  ],
+};
+
+export const HOMEPAGE_COMMUNITY = {
+  eyebrow: 'Community & Innovation',
+  title: 'Building the Future Through Innovation and Collaboration',
+  body:
+    'Beyond business services, Sugar & Leather invests in innovation initiatives, founder communities, educational programs, and strategic collaborations that strengthen the broader entrepreneurial ecosystem.',
+  cta: { label: 'Explore Community & Innovation', href: '/products/advanced-tech' },
+};
+
+export const HOMEPAGE_CTA = {
+  title: 'Ready to Accelerate Growth?',
+  highlight: null,
+  sub:
+    "Whether you're looking for funding, leadership support, execution capacity, or AI-powered technology, Sugar & Leather provides the infrastructure to help organizations grow with confidence.",
+  primaryLabel: 'Book a Strategy Call',
+  primaryHref: 'mailto:hello@sugarandleather.com',
+  secondaryLabel: 'Talk to Our Team',
+  secondaryHref: 'mailto:hello@sugarandleather.com',
+};
+
+export const HOMEPAGE_HERO = {
+  eyebrow: 'Capital · Leadership · Execution',
+  title: 'Building Companies Through Capital, Leadership, and Execution.',
+  sub:
+    'Sugar & Leather helps founders and growing businesses access grants and non-dilutive funding, deploy executive leadership through Strategic Partnerships, and scale operations through specialized execution pods across Marketing, Sales, Development, and Recruitment.',
+  trust:
+    'From funding readiness to business execution, we help organizations move from opportunity to growth with the right capital, leadership, and operational support.',
+  primaryCta: { label: 'Book a Strategy Call', href: '#cta' },
+  secondaryCta: { label: 'Explore Our Ecosystem', href: '#ecosystem' },
+};
 
 export const FOUNDERS = [
   {

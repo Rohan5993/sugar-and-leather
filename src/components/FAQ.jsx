@@ -1,17 +1,17 @@
-import { FAQ_ITEMS } from '../data/siteContent';
+import { HOMEPAGE_WHY } from '../data/siteContent';
 import FAQSection from './FAQSection';
 
 export default function FAQ() {
   return (
     <FAQSection
-      items={FAQ_ITEMS}
+      items={HOMEPAGE_WHY.items}
       id="faq"
-      eyebrow="FAQ"
+      eyebrow={HOMEPAGE_WHY.eyebrow}
       maxim={null}
       title={
         <>
-          <span className="faq-title-line">You&apos;ve got questions.</span>
-          <span className="faq-title-line serif-i">We&apos;ve got answers.</span>
+          <span className="faq-title-line">{HOMEPAGE_WHY.title}</span>
+          <span className="faq-title-line serif-i">{HOMEPAGE_WHY.titleHighlight}</span>
         </>
       }
     />

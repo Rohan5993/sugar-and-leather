@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
-import { ECOSYSTEM_CARDS } from '../data/siteContent';
+import { ECOSYSTEM_CARDS, HOMEPAGE_ECOSYSTEM } from '../data/siteContent';
 import { useTilt } from '../hooks/useMagnetic';
 import Eyebrow from './ui/Eyebrow';
 import Reveal from './ui/Reveal';
@@ -40,11 +40,14 @@ export default function Ecosystem() {
       <div className="wrap">
         <div className="section-head">
           <div>
-            <Reveal as={Eyebrow}>The ecosystem</Reveal>
+            <Reveal as={Eyebrow}>{HOMEPAGE_ECOSYSTEM.eyebrow}</Reveal>
             <SplitText as="h2" className="display" style={{ marginTop: 22 }}>
-              One ecosystem. Four domains. Infinite leverage.
+              {HOMEPAGE_ECOSYSTEM.title}
             </SplitText>
           </div>
+          <Reveal as="p" className="lead" delay={1}>
+            {HOMEPAGE_ECOSYSTEM.intro}
+          </Reveal>
         </div>
         <div className="eco-grid">
           {ECOSYSTEM_CARDS.map((card) => (

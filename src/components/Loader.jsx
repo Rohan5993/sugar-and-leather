@@ -3,6 +3,8 @@ import { useLoader } from '../hooks/useLoader';
 export default function Loader({ onComplete }) {
   const { done, progress } = useLoader(onComplete);
 
+  if (done) return null;
+
   return (
     <div className={`loader${done ? ' done' : ''}`} id="loader">
       <div className="loader-inner">

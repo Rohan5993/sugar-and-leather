@@ -1,5 +1,5 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useScrollNav } from '../hooks/useScrollNav';
 import { scrollToSection } from '../hooks/useSmoothAnchor';
@@ -60,6 +60,23 @@ export default function Nav() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const closeDrawer = () => setDrawerOpen(false);
 
+  useEffect(() => {
+    if (!drawerOpen) return undefined;
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    const onKeyDown = (e) => {
+      if (e.key === 'Escape') closeDrawer();
+    };
+    window.addEventListener('keydown', onKeyDown);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener('keydown', onKeyDown);
+    };
+  }, [drawerOpen]);
+
   return (
     <>
       <header className={`nav${scrolled ? ' scrolled' : ''}`} id="nav">
@@ -70,14 +87,15 @@ export default function Nav() {
               <NavAnchor key={`${link.label}-${link.href}`} {...link} />
             ))}
           </nav>
-          <Button href="/#cta" variant="outline">
+          <Button href="/#cta" variant="outline" className="nav-cta" magnetic={false}>
             Book a call
           </Button>
           <button
             type="button"
             className="nav-burger"
-            aria-label="Open menu"
-            onClick={() => setDrawerOpen(true)}
+            aria-label={drawerOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={drawerOpen}
+            onClick={() => setDrawerOpen((open) => !open)}
           >
             <Menu size={26} strokeWidth={1.75} />
           </button>

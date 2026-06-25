@@ -20,8 +20,14 @@ export default function CTA({
           <img className="cta-mark" src="/assets/logo-mark-lavender-flat.png" alt="" />
         </Reveal>
         <SplitText as="h2" className="display">
-          {title} <br />
-          <span className="serif-i">{highlight}</span>
+          {highlight ? (
+            <>
+              {title} <br />
+              <span className="serif-i">{highlight}</span>
+            </>
+          ) : (
+            title
+          )}
         </SplitText>
         <Reveal as="p" className="cta-sub" delay={2}>
           {sub}
