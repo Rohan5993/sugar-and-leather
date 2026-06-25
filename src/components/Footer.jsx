@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { asset, hashHref } from '../lib/asset';
 
 const FOOTER_LINKS = {
   ecosystem: [
@@ -30,7 +31,7 @@ function FooterLink({ link }) {
       </Link>
     );
   }
-  return <a href={link.href}>{link.label}</a>;
+  return <a href={link.href.startsWith('/#') ? hashHref(link.href.slice(1)) : link.href}>{link.label}</a>;
 }
 
 export default function Footer() {
@@ -40,7 +41,7 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-brand">
             <Link to="/" className="brand">
-              <img src="/assets/logo-mark-cream-flat.png" alt="Sugar & Leather" style={{ height: 38 }} />
+              <img src={asset('/assets/logo-mark-cream-flat.png')} alt="Sugar & Leather" style={{ height: 38 }} />
             </Link>
             <p className="footer-mission">
               To humanize artificial intelligence by staying deeply human ourselves.

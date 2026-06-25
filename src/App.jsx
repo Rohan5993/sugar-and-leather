@@ -5,9 +5,11 @@ import ProductPage from './pages/ProductPage';
 import EcosystemPage from './pages/EcosystemPage';
 import AboutPage from './pages/AboutPage';
 
+const routerBasename = import.meta.env.BASE_URL.replace(/\/$/, '') || undefined;
+
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={routerBasename}>
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<HomePage />} />

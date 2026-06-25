@@ -1,3 +1,5 @@
+import { asset as a } from '../lib/asset';
+
 export const PRODUCT_SLUGS = ['atelier', 'forge', 'compass', 'lexicon'];
 
 export const PRODUCT_PAGES = {
@@ -10,7 +12,7 @@ export const PRODUCT_PAGES = {
     heroHighlight: 'A year that changes the trajectory.',
     heroSub:
       'Private, intensive coaching for the singular leader navigating change at the highest altitude — confidential by design, intense by intention.',
-    heroImage: '/assets/photo-coaching-sage.png',
+    heroImage: a('/assets/photo-coaching-sage.png'),
     sections: [
       {
         id: 'practice',
@@ -22,7 +24,7 @@ export const PRODUCT_PAGES = {
           'Quarterly arcs with clear transformation milestones',
           'Confidential space for the most unguarded conversations',
         ],
-        image: '/assets/photo-study-light.png',
+        image: a('/assets/photo-study-light.png'),
         reverse: false,
       },
       {
@@ -35,7 +37,7 @@ export const PRODUCT_PAGES = {
           'Decision clarity under sustained pressure',
           'Leadership identity that holds when the context shifts',
         ],
-        image: '/assets/photo-coaching-library.png',
+        image: a('/assets/photo-coaching-library.png'),
         reverse: true,
       },
     ],
@@ -100,7 +102,7 @@ export const PRODUCT_PAGES = {
     heroHighlight: 'Teams that hold when it matters.',
     heroSub:
       'Immersive intensives where an entire leadership team is pressure-tested together — rehearsing the hardest decisions before they arrive.',
-    heroImage: '/assets/photo-coaching-library.png',
+    heroImage: a('/assets/photo-coaching-library.png'),
     sections: [
       {
         id: 'practice',
@@ -112,7 +114,7 @@ export const PRODUCT_PAGES = {
           'Decision rehearsals for the calls you cannot get wrong',
           'Facilitation that surfaces friction instead of burying it',
         ],
-        image: '/assets/photo-night-work.png',
+        image: a('/assets/photo-night-work.png'),
         reverse: false,
       },
       {
@@ -125,7 +127,7 @@ export const PRODUCT_PAGES = {
           'Rehearsed responses to board-level and market shocks',
           'Trust that compounds after the intensive ends',
         ],
-        image: '/assets/photo-coaching-sage.png',
+        image: a('/assets/photo-coaching-sage.png'),
         reverse: true,
       },
     ],
@@ -184,7 +186,7 @@ export const PRODUCT_PAGES = {
     heroHighlight: 'not a deck.',
     heroSub:
       'Embedded, senior counsel on your AI strategy — translating ambition into roadmaps that survive contact with reality and boardrooms that demand clarity.',
-    heroImage: '/assets/photo-night-work.png',
+    heroImage: a('/assets/photo-night-work.png'),
     sections: [
       {
         id: 'practice',
@@ -196,7 +198,7 @@ export const PRODUCT_PAGES = {
           'Roadmaps sequenced for capability before scale',
           'Narratives that hold up under scrutiny',
         ],
-        image: '/assets/photo-coaching-library.png',
+        image: a('/assets/photo-coaching-library.png'),
         reverse: false,
       },
       {
@@ -209,7 +211,7 @@ export const PRODUCT_PAGES = {
           'Governance and risk framed in plain language',
           'Counsel present when the decision is live, not after',
         ],
-        image: '/assets/photo-study-light.png',
+        image: a('/assets/photo-study-light.png'),
         reverse: true,
       },
     ],
@@ -268,7 +270,7 @@ export const PRODUCT_PAGES = {
     heroHighlight: 'Fluency that compounds.',
     heroSub:
       'A living curriculum that makes executives genuinely fluent in AI — adaptive, current, and built for leaders who need to decide, not perform.',
-    heroImage: '/assets/photo-study-light.png',
+    heroImage: a('/assets/photo-study-light.png'),
     sections: [
       {
         id: 'practice',
@@ -280,7 +282,7 @@ export const PRODUCT_PAGES = {
           'Plain-language frameworks that survive a boardroom',
           'Content refreshed as the field shifts',
         ],
-        image: '/assets/photo-night-work.png',
+        image: a('/assets/photo-night-work.png'),
         reverse: false,
       },
       {
@@ -293,7 +295,7 @@ export const PRODUCT_PAGES = {
           'Scenario-based practice tied to real decisions',
           'Shared vocabulary across the leadership team',
         ],
-        image: '/assets/photo-coaching-sage.png',
+        image: a('/assets/photo-coaching-sage.png'),
         reverse: true,
       },
     ],
@@ -357,7 +359,7 @@ export const ABOUT_PAGE = {
     title: 'Built. Not given.',
     highlight: 'Human at the core.',
     sub: 'Sugar & Leather exists for leaders who refuse to choose between ambition and humanity — especially as artificial intelligence reshapes what leadership demands.',
-    image: '/assets/photo-coaching-library.png',
+    image: a('/assets/photo-coaching-library.png'),
     primaryAction: {
       label: 'Book a call',
       href: 'mailto:hello@sugarandleather.com',
@@ -401,7 +403,7 @@ export const ABOUT_PAGE = {
     quote:
       'The leaders I admire most were never the loudest. They stayed human when the pressure said otherwise.',
     body: 'Vivienne founded Sugar & Leather after two decades advising and coaching at the intersection of technology, governance, and executive transformation. She works directly with a small number of clients each year — by design.',
-    image: '/assets/photo-coaching-sage.png',
+    image: a('/assets/photo-coaching-sage.png'),
   },
   philosophy: {
     eyebrow: 'Ecosystem philosophy',

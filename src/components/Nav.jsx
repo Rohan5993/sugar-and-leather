@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useScrollNav } from '../hooks/useScrollNav';
 import { scrollToSection } from '../hooks/useSmoothAnchor';
+import { hashHref } from '../lib/asset';
 import Brand from './ui/Brand';
 import Button from './ui/Button';
 
@@ -30,7 +31,7 @@ function NavAnchor({ href, label, route, onNavigate }) {
     const hash = href.slice(1);
     return (
       <a
-        href={href}
+        href={hashHref(hash)}
         className="nav-link"
         onClick={(e) => {
           e.preventDefault();

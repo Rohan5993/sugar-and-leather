@@ -1,3 +1,5 @@
+import { asset as a } from '../lib/asset';
+
 export const MARQUEE_ITEMS = [
   'Capital',
   'Leadership',
@@ -12,7 +14,7 @@ export const ECOSYSTEM_CARDS = [
     id: 'capital-access',
     href: '/products/capital-access',
     className: 'c-a',
-    photo: '/assets/photo-coaching-sage.png',
+    photo: a('/assets/photo-coaching-sage.png'),
     index: '01',
     name: 'Capital Access & Grant Services',
     description:
@@ -22,7 +24,7 @@ export const ECOSYSTEM_CARDS = [
     id: 'strategic-partnerships',
     href: '/products/strategic-partnerships',
     className: 'c-b',
-    photo: '/assets/photo-coaching-library.png',
+    photo: a('/assets/photo-coaching-library.png'),
     index: '02',
     name: 'Strategic Partnerships',
     description:
@@ -32,7 +34,7 @@ export const ECOSYSTEM_CARDS = [
     id: 'aries-platform',
     href: '/products/aries-platform',
     className: 'c-c',
-    photo: '/assets/photo-night-work.png',
+    photo: a('/assets/photo-night-work.png'),
     index: '03',
     name: 'Product Platforms',
     description:
@@ -42,7 +44,7 @@ export const ECOSYSTEM_CARDS = [
     id: 'advanced-tech',
     href: '/products/advanced-tech',
     className: 'c-d',
-    photo: '/assets/photo-study-light.png',
+    photo: a('/assets/photo-study-light.png'),
     index: '04',
     name: 'Innovation & Community',
     description:
@@ -101,7 +103,7 @@ export const HOMEPAGE_SHOWCASES = [
     cta: { label: 'Explore Capital Services', href: '/products/capital-access' },
     reverse: false,
     slides: [
-      { type: 'photo', image: '/assets/photo-coaching-sage.png', caption: 'Capital strategy' },
+      { type: 'photo', image: a('/assets/photo-coaching-sage.png'), caption: 'Capital strategy' },
       {
         type: 'ui',
         caption: 'Funding roadmap',
@@ -111,7 +113,7 @@ export const HOMEPAGE_SHOWCASES = [
         meter: '68%',
         lines: ['72%', '58%', '64%'],
       },
-      { type: 'photo', image: '/assets/photo-study-light.png', caption: 'Operational readiness' },
+      { type: 'photo', image: a('/assets/photo-study-light.png'), caption: 'Operational readiness' },
     ],
   },
   {
@@ -151,7 +153,7 @@ export const HOMEPAGE_SHOWCASES = [
     cta: { label: 'Explore Strategic Partnerships', href: '/products/strategic-partnerships' },
     reverse: true,
     slides: [
-      { type: 'photo', image: '/assets/photo-coaching-library.png', caption: 'Executive leadership' },
+      { type: 'photo', image: a('/assets/photo-coaching-library.png'), caption: 'Executive leadership' },
       {
         type: 'ui',
         caption: 'Execution pods',
@@ -161,7 +163,7 @@ export const HOMEPAGE_SHOWCASES = [
         meter: '82%',
         lines: ['60%', '78%', '48%'],
       },
-      { type: 'photo', image: '/assets/photo-night-work.png', caption: 'Operational delivery' },
+      { type: 'photo', image: a('/assets/photo-night-work.png'), caption: 'Operational delivery' },
     ],
   },
   {
@@ -189,7 +191,7 @@ export const HOMEPAGE_SHOWCASES = [
     cta: { label: 'Explore Products', href: '/products/aries-platform' },
     reverse: false,
     slides: [
-      { type: 'photo', image: '/assets/photo-night-work.png', caption: 'Aries AI' },
+      { type: 'photo', image: a('/assets/photo-night-work.png'), caption: 'Aries AI' },
       {
         type: 'ui',
         caption: 'Revenue intelligence',
@@ -199,7 +201,7 @@ export const HOMEPAGE_SHOWCASES = [
         meter: '74%',
         lines: ['66%', '80%', '58%'],
       },
-      { type: 'photo', image: '/assets/photo-coaching-library.png', caption: 'Sequence' },
+      { type: 'photo', image: a('/assets/photo-coaching-library.png'), caption: 'Sequence' },
     ],
   },
 ];
@@ -263,7 +265,7 @@ export const HOMEPAGE_HERO = {
 export const FOUNDERS = [
   {
     id: 'audrey',
-    image: '/assets/audrey.webp',
+    image: a('/assets/audrey.webp'),
     tag: 'Founder & Purpose-Driven Coach',
     eyebrow: 'A note from our founder',
     quote: 'The leaders I admire most were never the loudest. They stayed',
@@ -276,7 +278,7 @@ export const FOUNDERS = [
   },
   {
     id: 'troy',
-    image: '/assets/Troy.webp',
+    image: a('/assets/Troy.webp'),
     tag: 'Founder & Visionary Leadership Head',
     eyebrow: 'A note from our founder',
     quote: 'Strategy without judgment is just motion. The best operators know when to',
@@ -345,7 +347,7 @@ export const PRACTICES = [
     cta: { label: 'View more', href: '/practices/atelier' },
     reverse: false,
     slides: [
-      { type: 'photo', image: '/assets/photo-coaching-sage.png', caption: 'The room' },
+      { type: 'photo', image: a('/assets/photo-coaching-sage.png'), caption: 'The room' },
       {
         type: 'ui',
         caption: 'The arc',
@@ -355,7 +357,7 @@ export const PRACTICES = [
         meter: '34%',
         lines: ['72%', '54%', '64%'],
       },
-      { type: 'photo', image: '/assets/photo-study-light.png', caption: 'The work' },
+      { type: 'photo', image: a('/assets/photo-study-light.png'), caption: 'The work' },
     ],
   },
   {
@@ -385,7 +387,7 @@ export const PRACTICES = [
     cta: { label: 'View more', href: '/practices/forge' },
     reverse: true,
     slides: [
-      { type: 'photo', image: '/assets/photo-coaching-library.png', caption: 'The table' },
+      { type: 'photo', image: a('/assets/photo-coaching-library.png'), caption: 'The table' },
       {
         type: 'ui',
         caption: 'The rehearsal',
@@ -395,7 +397,7 @@ export const PRACTICES = [
         meter: '82%',
         lines: ['60%', '78%', '48%'],
       },
-      { type: 'photo', image: '/assets/photo-night-work.png', caption: 'The pressure' },
+      { type: 'photo', image: a('/assets/photo-night-work.png'), caption: 'The pressure' },
     ],
   },
   {
@@ -434,8 +436,8 @@ export const PRACTICES = [
         meter: '58%',
         lines: ['84%', '56%', '70%'],
       },
-      { type: 'photo', image: '/assets/photo-night-work.png', caption: 'The build' },
-      { type: 'photo', image: '/assets/photo-coaching-library.png', caption: 'The counsel' },
+      { type: 'photo', image: a('/assets/photo-night-work.png'), caption: 'The build' },
+      { type: 'photo', image: a('/assets/photo-coaching-library.png'), caption: 'The counsel' },
     ],
   },
   {
@@ -465,7 +467,7 @@ export const PRACTICES = [
     cta: { label: 'View more', href: '/practices/lexicon' },
     reverse: true,
     slides: [
-      { type: 'photo', image: '/assets/photo-study-light.png', caption: 'The study' },
+      { type: 'photo', image: a('/assets/photo-study-light.png'), caption: 'The study' },
       {
         type: 'ui',
         caption: 'The path',
@@ -475,7 +477,7 @@ export const PRACTICES = [
         meter: '62%',
         lines: ['66%', '80%', '50%'],
       },
-      { type: 'photo', image: '/assets/photo-night-work.png', caption: 'The practice' },
+      { type: 'photo', image: a('/assets/photo-night-work.png'), caption: 'The practice' },
     ],
   },
 ];

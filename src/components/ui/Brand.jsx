@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { asset } from '../../lib/asset';
 import { useMagnetic } from '../../hooks/useMagnetic';
 
 export default function Brand({ className = '' }) {
@@ -13,7 +14,7 @@ export default function Brand({ className = '' }) {
       onMouseLeave={onMouseLeave}
       data-magnetic
     >
-      <img src="/assets/logo-mark-cream-flat.png" alt="" />
+      <img src={asset('/assets/logo-mark-cream-flat.png')} alt="" />
       <span className="brand-name">
         Sugar <span className="brand-amp">&amp;</span> Leather
       </span>

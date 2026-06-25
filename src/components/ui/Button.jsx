@@ -1,6 +1,7 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useMagnetic } from '../../hooks/useMagnetic';
+import { hashHref } from '../../lib/asset';
 
 function isInternalRoute(href) {
   return href && href.startsWith('/') && !href.startsWith('//') && !href.startsWith('/#');
@@ -47,8 +48,9 @@ export default function Button({
   }
 
   if (href) {
+    const anchorHref = isHashRoute(href) ? hashHref(href.slice(1)) : href;
     return (
-      <a href={href} className={classes} onClick={onClick} {...handlers} {...props}>
+      <a href={anchorHref} className={classes} onClick={onClick} {...handlers} {...props}>
         {content}
       </a>
     );

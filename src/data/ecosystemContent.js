@@ -1,3 +1,5 @@
+import { asset as a } from '../lib/asset';
+
 export const ECOSYSTEM_SLUGS = [
   'capital-access',
   'strategic-partnerships',
@@ -15,7 +17,7 @@ export const ECOSYSTEM_PAGES = {
     heroHighlight: 'not dilutes.',
     heroSub:
       'Grant strategy, non-dilutive capital, and operational readiness for organizations building at scale — without trading away what you have fought to own.',
-    heroImage: '/assets/photo-coaching-sage.png',
+    heroImage: a('/assets/photo-coaching-sage.png'),
     offerings: {
       eyebrow: 'What we deliver',
       title: 'Capital with clarity at every stage',
@@ -51,7 +53,7 @@ export const ECOSYSTEM_PAGES = {
           'Grant portfolios diversified across non-dilutive sources',
           'Readiness audits before submission, not after rejection',
         ],
-        image: '/assets/photo-study-light.png',
+        image: a('/assets/photo-study-light.png'),
         reverse: false,
       },
       {
@@ -64,7 +66,7 @@ export const ECOSYSTEM_PAGES = {
           'R&D-intensive ventures pursuing federal programs',
           'Leadership teams preparing for institutional diligence',
         ],
-        image: '/assets/photo-coaching-library.png',
+        image: a('/assets/photo-coaching-library.png'),
         reverse: true,
       },
     ],
@@ -129,7 +131,7 @@ export const ECOSYSTEM_PAGES = {
     heroHighlight: 'Specialists who execute.',
     heroSub:
       'Senior strategic counsel paired with embedded service pods — marketing, sales, development, and recruitment — so ambition becomes operational reality.',
-    heroImage: '/assets/photo-coaching-library.png',
+    heroImage: a('/assets/photo-coaching-library.png'),
     offerings: {
       eyebrow: 'Service pods',
       title: 'One relationship. Four execution lanes.',
@@ -171,7 +173,7 @@ export const ECOSYSTEM_PAGES = {
           'Pods activated by priority, not retainer bloat',
           'Shared cadence with your leadership team',
         ],
-        image: '/assets/photo-night-work.png',
+        image: a('/assets/photo-night-work.png'),
         reverse: false,
       },
       {
@@ -184,7 +186,7 @@ export const ECOSYSTEM_PAGES = {
           'Leadership bandwidth returned to highest-stakes decisions',
           'Cross-functional alignment that survives the quarter',
         ],
-        image: '/assets/photo-coaching-sage.png',
+        image: a('/assets/photo-coaching-sage.png'),
         reverse: true,
       },
     ],
@@ -249,7 +251,7 @@ export const ECOSYSTEM_PAGES = {
     heroHighlight: 'for the AI-native company.',
     heroSub:
       'An AI-native business platform built for mid-market scale — Sequence CRM, intelligent workflows, and a data layer that keeps judgment human while the machine moves faster.',
-    heroImage: '/assets/photo-night-work.png',
+    heroImage: a('/assets/photo-night-work.png'),
     offerings: {
       eyebrow: 'Platform modules',
       title: 'Infrastructure that scales with judgment intact',
@@ -285,7 +287,7 @@ export const ECOSYSTEM_PAGES = {
           'Mid-market pricing without enterprise implementation drag',
           'Composable modules that grow with your operating model',
         ],
-        image: '/assets/photo-coaching-library.png',
+        image: a('/assets/photo-coaching-library.png'),
         reverse: false,
       },
       {
@@ -298,7 +300,7 @@ export const ECOSYSTEM_PAGES = {
           'Executive dashboards with plain-language signal',
           'Ongoing tuning as your AI maturity compounds',
         ],
-        image: '/assets/photo-study-light.png',
+        image: a('/assets/photo-study-light.png'),
         reverse: true,
       },
     ],
@@ -363,7 +365,7 @@ export const ECOSYSTEM_PAGES = {
     heroHighlight: 'at the frontier.',
     heroSub:
       'AI governance, drone systems, distributed networks, and patented intellectual property — for organizations building what does not exist yet, under scrutiny that will not wait.',
-    heroImage: '/assets/photo-study-light.png',
+    heroImage: a('/assets/photo-study-light.png'),
     offerings: {
       eyebrow: 'Capability areas',
       title: 'Innovation with guardrails that hold',
@@ -405,7 +407,7 @@ export const ECOSYSTEM_PAGES = {
           'Technical programs with executive-visible milestones',
           'IP strategy integrated with product and capital planning',
         ],
-        image: '/assets/photo-night-work.png',
+        image: a('/assets/photo-night-work.png'),
         reverse: false,
       },
       {
@@ -418,7 +420,7 @@ export const ECOSYSTEM_PAGES = {
           'Program leadership on drone and distributed systems',
           'IP counsel coordination with technical documentation',
         ],
-        image: '/assets/photo-coaching-sage.png',
+        image: a('/assets/photo-coaching-sage.png'),
         reverse: true,
       },
     ],
