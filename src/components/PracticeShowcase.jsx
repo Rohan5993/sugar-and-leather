@@ -63,6 +63,17 @@ function FeatureIcon({ name }) {
   return Icon ? <Icon size={22} strokeWidth={1.75} /> : null;
 }
 
+function BodyCopy({ text }) {
+  const lines = text.split('\n');
+  if (lines.length === 1) return text;
+  return lines.map((line, i) => (
+    <span key={i}>
+      {i > 0 ? <br /> : null}
+      {line}
+    </span>
+  ));
+}
+
 export default function PracticeShowcase({ practice }) {
   const visualRef = useParallax(0.06);
   const sectionClass = `show${practice.reverse ? ' reverse' : ''}`;
@@ -85,7 +96,7 @@ export default function PracticeShowcase({ practice }) {
               </Reveal>
             ) : null}
             <Reveal as="p" className="show-body" delay={3}>
-              {practice.body}
+              <BodyCopy text={practice.body} />
             </Reveal>
             <ul className="caps">
               {practice.features.map((feature, i) => (

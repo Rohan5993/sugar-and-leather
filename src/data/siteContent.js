@@ -54,9 +54,10 @@ export const ECOSYSTEM_CARDS = [
 
 export const HOMEPAGE_ECOSYSTEM = {
   eyebrow: 'The Sugar & Leather Ecosystem',
-  title: 'One Ecosystem. Multiple Growth Engines.',
+  titleLine1: 'One Ecosystem.',
+  titleLine2: 'Multiple Growth Engines.',
   intro:
-    'Growing businesses rarely fail because of ideas. They struggle because they lack access to capital, strategic leadership, or execution capacity. Sugar & Leather brings all three together through a connected ecosystem designed to help organizations grow sustainably.',
+    'Growing businesses rarely fail for lack of ideas. They need capital, leadership, and execution. Sugar & Leather unites all three in one ecosystem built for sustainable growth.',
 };
 
 export const HOMEPAGE_SHOWCASES = [
@@ -121,10 +122,9 @@ export const HOMEPAGE_SHOWCASES = [
     num: '02',
     eyebrow: 'Strategic Partnerships',
     name: 'Executive Leadership Without Full-Time Overhead',
-    tagline:
-      'For organizations that are ready to scale, Sugar & Leather provides strategic partnership engagements that combine executive leadership with specialized execution teams.',
+    tagline: '',
     body:
-      'Each partnership is guided by experienced leaders and supported by dedicated operational pods that execute critical business functions.',
+      'For scaling organizations, Sugar & Leather pairs executive leadership with execution teams. Leaders guide strategy; specialist pods deliver.',
     features: [
       {
         icon: 'Megaphone',
@@ -255,7 +255,7 @@ export const HOMEPAGE_HERO = {
   eyebrow: 'Capital · Leadership · Execution',
   title: 'Building Companies Through Capital, Leadership, and Execution.',
   sub:
-    'Sugar & Leather helps founders and growing businesses access grants and non-dilutive funding, deploy executive leadership through Strategic Partnerships, and scale operations through specialized execution pods across Marketing, Sales, Development, and Recruitment.',
+    'Sugar & Leather helps founders secure grants and non-dilutive funding, deploy executive leadership, and scale with execution pods across marketing, sales, development, and recruitment.',
   primaryCta: { label: 'Book a Strategy Call', href: '#cta' },
   secondaryCta: { label: 'Explore Our Ecosystem', href: '#ecosystem' },
 };

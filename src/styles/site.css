@@ -148,10 +148,7 @@ body.no-motion .split { opacity: 1 !important; transform: none !important; }
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E"); }
 .hero-content { position: relative; z-index: 3; flex: 1; display: flex; align-items: center; justify-content: center; padding-bottom: 60px; }
 .hero-center { width: 100%; max-width: 1200px; margin: 0 auto; text-align: center; }
-.hero h1 { font-size: 2.5rem; text-wrap: normal; }
-@media (min-width: 1024px) {
-  .hero h1 { font-size: 4rem; }
-}
+.hero h1 { font-size: 3.5rem; text-wrap: normal; }
 .hero-sub { font-size: clamp(16px, 1.3vw, 20px); line-height: 1.65; color: var(--silver); max-width: 56ch; margin: 32px auto 0; }
 .hero-eyebrow { margin-bottom: 30px; }
 .hero-actions { display: flex; gap: 16px; margin-top: 42px; flex-wrap: wrap; justify-content: center; }
@@ -202,11 +199,11 @@ body.no-motion .strip-track { animation: none; }
   padding-bottom: clamp(48px, 5vw, 64px);
 }
 .section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; margin-bottom: 64px; }
-#ecosystem .section-head { margin-bottom: clamp(40px, 5vw, 56px); gap: 36px; }
+#ecosystem .section-head { margin-bottom: clamp(40px, 5vw, 56px); gap: 36px; align-items: flex-start; }
 .section-head h2 { font-size: clamp(38px, 5vw, 68px); }
 #ecosystem .section-head h2 { font-size: 48px; }
 .section-head .lead { max-width: 40ch; font-size: 18px; line-height: 1.6; color: var(--silver); }
-#ecosystem .section-head .lead { max-width: 38ch; font-size: 17.5px; }
+#ecosystem .section-head .lead { max-width: 42ch; font-size: 17.5px; line-height: 1.55; }
 
 .eco-grid { display: grid; grid-template-columns: repeat(12, 1fr); grid-template-rows: repeat(2, clamp(280px, 32vh, 390px)); gap: 20px; max-width: min(100%, 1180px); margin: 0 auto; }
 .eco-card {
@@ -267,16 +264,41 @@ body.no-motion .strip-track { animation: none; }
 .show-meta { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
 .show-meta .num { font-family: var(--font-display); font-style: italic; font-weight: 700; font-size: 30px; color: var(--deep-plum); }
 .show-name { font-size: clamp(40px,4.6vw,74px); margin: 0; }
+#capital-access .show-name,
+#strategic-partnerships .show-name,
+#products-platforms .show-name { font-size: 3rem; line-height: 1.05; }
 .show-tagline { font-size: clamp(18px,1.6vw,22px); color: var(--lavender); margin: 18px 0 0; line-height: 1.4; }
 .show-body { font-size: 17px; line-height: 1.7; color: var(--silver); margin: 26px 0 0; max-width: 46ch; }
+#strategic-partnerships .show-body { max-width: 58ch; line-height: 1.55; }
 .caps { list-style: none; padding: 0; margin: 34px 0 0; display: grid; gap: 0; }
 .cap { display: flex; align-items: flex-start; gap: 16px; padding: 18px 0; border-top: 1px solid rgba(61,51,71,.6); }
 .cap:last-child { border-bottom: 1px solid rgba(61,51,71,.6); }
 .cap .cap-ic { flex: none; width: 22px; height: 22px; color: var(--lavender); margin-top: 1px; }
 .cap .cap-ic svg { width: 100%; height: 100%; }
-.cap .cap-t { font-size: 16px; color: var(--cream); }
-.cap .cap-d { font-size: 14.5px; color: var(--silver); margin-top: 3px; line-height: 1.5; }
+.cap .cap-t { display: block; font-size: 16px; color: var(--cream); }
+.cap > span:not(.cap-ic) { display: flex; flex-direction: column; gap: 10px; }
+.cap .cap-d { display: block; font-size: 14.5px; color: var(--silver); margin-top: 0; line-height: 1.5; }
 .show-actions { margin-top: 38px; display: flex; gap: 16px; flex-wrap: wrap; }
+
+/* Capital Access — compact viewport layout for 6-item list */
+#capital-access .show-grid { align-items: start; }
+#capital-access .show-body { margin-top: 18px; font-size: 16px; line-height: 1.6; }
+#capital-access .caps {
+  margin-top: 22px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 28px;
+}
+#capital-access .cap { padding: 14px 0; border-bottom: none; }
+#capital-access .cap:nth-last-child(-n+2) { border-bottom: 1px solid rgba(61,51,71,.6); }
+
+/* Strategic Partnerships — two-column pod list */
+#strategic-partnerships .caps {
+  margin-top: 22px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 28px;
+}
+#strategic-partnerships .cap { padding: 14px 0; border-bottom: none; }
+#strategic-partnerships .cap:nth-last-child(-n+2) { border-bottom: 1px solid rgba(61,51,71,.6); }
 
 /* carousel */
 .carousel { position: relative; }
@@ -559,6 +581,18 @@ body.cursor-hot .cursor { width: 5px; height: 5px; }
 .surface-light .btn-outline {
   color: var(--obsidian);
   border-color: rgba(14, 12, 15, .22);
+}
+#community .community-cta.btn-cream {
+  background: var(--lavender);
+  border: 1px solid var(--lavender);
+  color: var(--obsidian);
+}
+#community .community-cta.btn-cream::after {
+  background: var(--cream);
+}
+#community .community-cta.btn-cream:hover {
+  border-color: var(--lavender);
+  color: var(--obsidian);
 }
 .surface-light .btn-outline:hover .lab,
 .surface-light .btn-outline:hover svg { color: var(--obsidian); }

@@ -42,7 +42,9 @@ export default function Ecosystem() {
           <div>
             <Reveal as={Eyebrow}>{HOMEPAGE_ECOSYSTEM.eyebrow}</Reveal>
             <SplitText as="h2" className="display" style={{ marginTop: 22 }}>
-              {HOMEPAGE_ECOSYSTEM.title}
+              {HOMEPAGE_ECOSYSTEM.titleLine1}
+              <br />
+              {HOMEPAGE_ECOSYSTEM.titleLine2}
             </SplitText>
           </div>
           <Reveal as="p" className="lead" delay={1}>

@@ -20,7 +20,9 @@ export default function HomeCommunity() {
           </Reveal>
         </div>
         <Reveal delay={2}>
-          <Button href={HOMEPAGE_COMMUNITY.cta.href}>{HOMEPAGE_COMMUNITY.cta.label}</Button>
+          <Button href={HOMEPAGE_COMMUNITY.cta.href} variant="cream" className="community-cta">
+            {HOMEPAGE_COMMUNITY.cta.label}
+          </Button>
         </Reveal>
       </div>
     </section>
