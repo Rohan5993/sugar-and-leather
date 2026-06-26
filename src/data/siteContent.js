@@ -256,8 +256,6 @@ export const HOMEPAGE_HERO = {
   title: 'Building Companies Through Capital, Leadership, and Execution.',
   sub:
     'Sugar & Leather helps founders and growing businesses access grants and non-dilutive funding, deploy executive leadership through Strategic Partnerships, and scale operations through specialized execution pods across Marketing, Sales, Development, and Recruitment.',
-  trust:
-    'From funding readiness to business execution, we help organizations move from opportunity to growth with the right capital, leadership, and operational support.',
   primaryCta: { label: 'Book a Strategy Call', href: '#cta' },
   secondaryCta: { label: 'Explore Our Ecosystem', href: '#ecosystem' },
 };

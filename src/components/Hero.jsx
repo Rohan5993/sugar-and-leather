@@ -39,9 +39,6 @@ export default function Hero({ ready }) {
           <Reveal as="p" className="hero-sub" delay={3}>
             {HOMEPAGE_HERO.sub}
           </Reveal>
-          <Reveal as="p" className="hero-sub" delay={3}>
-            {HOMEPAGE_HERO.trust}
-          </Reveal>
           <Reveal className="hero-actions" delay={4}>
             <Button href={HOMEPAGE_HERO.primaryCta.href}>{HOMEPAGE_HERO.primaryCta.label}</Button>
             <Button href={HOMEPAGE_HERO.secondaryCta.href} variant="outline" showArrow={false}>
