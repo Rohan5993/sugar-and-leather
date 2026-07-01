@@ -3,10 +3,10 @@ import { asset, hashHref } from '../lib/asset';
 
 const FOOTER_LINKS = {
   ecosystem: [
-    { href: '/products/capital-access', label: 'Capital Access', route: true },
-    { href: '/products/strategic-partnerships', label: 'Strategic Partnerships', route: true },
-    { href: '/products/aries-platform', label: 'ARIES Platform', route: true },
-    { href: '/products/advanced-tech', label: 'Advanced Tech', route: true },
+    { href: '/capital-access', label: 'Capital Access', route: true },
+    { href: '/strategic-partnerships', label: 'Strategic Partnerships', route: true },
+    { href: '/aries-platform', label: 'ARIES Platform', route: true },
+    { href: '/advanced-tech', label: 'Advanced Tech', route: true },
   ],
   firm: [
     { href: '/#founder', label: 'Founder' },

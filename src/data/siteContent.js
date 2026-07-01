@@ -12,7 +12,7 @@ export const MARQUEE_ITEMS = [
 export const ECOSYSTEM_CARDS = [
   {
     id: 'capital-access',
-    href: '/products/capital-access',
+    href: '/capital-access',
     className: 'c-a',
     photo: a('/assets/photo-coaching-sage.png'),
     index: '01',
@@ -22,7 +22,7 @@ export const ECOSYSTEM_CARDS = [
   },
   {
     id: 'strategic-partnerships',
-    href: '/products/strategic-partnerships',
+    href: '/strategic-partnerships',
     className: 'c-b',
     photo: a('/assets/photo-coaching-library.png'),
     index: '02',
@@ -32,7 +32,7 @@ export const ECOSYSTEM_CARDS = [
   },
   {
     id: 'aries-platform',
-    href: '/products/aries-platform',
+    href: '/aries-platform',
     className: 'c-c',
     photo: a('/assets/photo-night-work.png'),
     index: '03',
@@ -42,7 +42,7 @@ export const ECOSYSTEM_CARDS = [
   },
   {
     id: 'advanced-tech',
-    href: '/products/advanced-tech',
+    href: '/advanced-tech',
     className: 'c-d',
     photo: a('/assets/photo-study-light.png'),
     index: '04',
@@ -101,7 +101,7 @@ export const HOMEPAGE_SHOWCASES = [
         description: 'Sequence capital milestones across grants, incentives, and programs.',
       },
     ],
-    cta: { label: 'Explore Capital Services', href: '/products/capital-access' },
+    cta: { label: 'Explore Capital Services', href: '/capital-access' },
     reverse: false,
     slides: [
       { type: 'photo', image: a('/assets/photo-coaching-sage.png'), caption: 'Capital strategy' },
@@ -131,6 +131,7 @@ export const HOMEPAGE_SHOWCASES = [
         title: 'Marketing Pod',
         description:
           'Campaign execution, content systems, demand generation, brand growth, and marketing operations.',
+        href: '/strategic-partnerships/marketing-pod',
       },
       {
         icon: 'Target',
@@ -150,7 +151,7 @@ export const HOMEPAGE_SHOWCASES = [
         description: 'Talent acquisition, hiring systems, workforce planning, and recruitment operations.',
       },
     ],
-    cta: { label: 'Explore Strategic Partnerships', href: '/products/strategic-partnerships' },
+    cta: { label: 'Explore Strategic Partnerships', href: '/strategic-partnerships' },
     reverse: true,
     slides: [
       { type: 'photo', image: a('/assets/photo-coaching-library.png'), caption: 'Executive leadership' },
@@ -188,7 +189,7 @@ export const HOMEPAGE_SHOWCASES = [
           'An intelligent revenue platform combining CRM intelligence, buyer intent signals, and sales execution tools to help teams close more business.',
       },
     ],
-    cta: { label: 'Explore Products', href: '/products/aries-platform' },
+    cta: { label: 'Explore Products', href: '/aries-platform' },
     reverse: false,
     slides: [
       { type: 'photo', image: a('/assets/photo-night-work.png'), caption: 'Aries AI' },
@@ -237,7 +238,7 @@ export const HOMEPAGE_COMMUNITY = {
   title: 'Building the Future Through Innovation and Collaboration',
   body:
     'Beyond business services, Sugar & Leather invests in innovation initiatives, founder communities, educational programs, and strategic collaborations that strengthen the broader entrepreneurial ecosystem.',
-  cta: { label: 'Explore Community & Innovation', href: '/products/advanced-tech' },
+  cta: { label: 'Explore Community & Innovation', href: '/advanced-tech' },
 };
 
 export const HOMEPAGE_CTA = {

@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import {
+  ArrowUpRight,
   Bot,
   ClipboardCheck,
   Code2,
@@ -58,15 +60,34 @@ export default function OfferingsSection({ offerings, tone = 'dark' }) {
           </div>
         </div>
         <div className={gridClass}>
-          {offerings.items.map((item, i) => (
-            <Reveal className="offering-card" key={item.title} delay={i}>
-              <div className="offering-icon">
-                <OfferingIcon name={item.icon} />
-              </div>
-              <h3 className="offering-title">{item.title}</h3>
-              <p className="offering-desc">{item.description}</p>
-            </Reveal>
-          ))}
+          {offerings.items.map((item, i) => {
+            const card = (
+              <>
+                <div className="offering-icon">
+                  <OfferingIcon name={item.icon} />
+                </div>
+                <h3 className="offering-title">{item.title}</h3>
+                <p className="offering-desc">{item.description}</p>
+              </>
+            );
+
+            return (
+              <Reveal className="offering-card" key={item.title} delay={i}>
+                {offerings.cornerArrow ? (
+                  <div className="offering-go" aria-hidden="true">
+                    <ArrowUpRight size={18} strokeWidth={1.75} />
+                  </div>
+                ) : null}
+                {item.href ? (
+                  <Link to={item.href} className="offering-card-link">
+                    {card}
+                  </Link>
+                ) : (
+                  card
+                )}
+              </Reveal>
+            );
+          })}
         </div>
       </div>
     </section>

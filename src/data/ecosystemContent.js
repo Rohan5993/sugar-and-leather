@@ -135,12 +135,14 @@ export const ECOSYSTEM_PAGES = {
     offerings: {
       eyebrow: 'Service pods',
       title: 'One relationship. Four execution lanes.',
+      cornerArrow: true,
       items: [
         {
           icon: 'Megaphone',
           title: 'Marketing pod',
           description:
             'Positioning, demand generation, and brand systems aligned to revenue goals — not vanity metrics.',
+          href: '/strategic-partnerships/marketing-pod',
         },
         {
           icon: 'Handshake',

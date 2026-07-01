@@ -24,6 +24,7 @@ import {
   Cpu,
   Workflow,
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useParallax } from '../hooks/useParallax';
 import Eyebrow from './ui/Eyebrow';
 import Reveal from './ui/Reveal';
@@ -105,7 +106,13 @@ export default function PracticeShowcase({ practice }) {
                     <FeatureIcon name={feature.icon} />
                   </span>
                   <span>
-                    <span className="cap-t">{feature.title}</span>
+                    {feature.href ? (
+                      <Link to={feature.href} className="cap-t cap-t-link">
+                        {feature.title}
+                      </Link>
+                    ) : (
+                      <span className="cap-t">{feature.title}</span>
+                    )}
                     <span className="cap-d">{feature.description}</span>
                   </span>
                 </Reveal>

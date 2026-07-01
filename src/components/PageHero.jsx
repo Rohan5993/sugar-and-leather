@@ -3,6 +3,17 @@ import Reveal from './ui/Reveal';
 import SplitText from './ui/SplitText';
 import Button from './ui/Button';
 
+function MultilineText({ text }) {
+  const lines = text.split('\n');
+  if (lines.length === 1) return text;
+  return lines.map((line, i) => (
+    <span key={i}>
+      {i > 0 ? <br /> : null}
+      {line}
+    </span>
+  ));
+}
+
 export default function PageHero({
   eyebrow,
   title,
@@ -13,6 +24,7 @@ export default function PageHero({
   secondaryAction,
   compact = false,
   fullViewport = false,
+  stackedTitle = false,
 }) {
   const heroClass = [
     'page-hero',
@@ -35,18 +47,25 @@ export default function PageHero({
         <Reveal as={Eyebrow} center>
           {eyebrow}
         </Reveal>
-        <SplitText as="h1" className="display page-hero-title">
-          {title}
-          {highlight ? (
-            <>
-              <br />
-              <span className="serif-i">{highlight}</span>
-            </>
-          ) : null}
-        </SplitText>
+        {stackedTitle && highlight ? (
+          <Reveal as="h1" className="display page-hero-title">
+            <span className="page-hero-title-line">{title}</span>
+            <span className="page-hero-title-line serif-i">{highlight}</span>
+          </Reveal>
+        ) : (
+          <SplitText as="h1" className="display page-hero-title">
+            {title}
+            {highlight ? (
+              <>
+                <br />
+                <span className="serif-i">{highlight}</span>
+              </>
+            ) : null}
+          </SplitText>
+        )}
         {sub ? (
           <Reveal as="p" className="page-hero-sub" delay={2}>
-            {sub}
+            <MultilineText text={sub} />
           </Reveal>
         ) : null}
         {primaryAction || secondaryAction ? (
