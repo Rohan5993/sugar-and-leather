@@ -1,0 +1,179 @@
+import { asset as a } from '../lib/asset';
+
+export const STRATEGIC_PARTNERSHIPS = {
+  slug: 'strategic-partnerships',
+  eyebrow: 'Strategic Partnerships',
+  name: 'Strategic Partnerships',
+  heroTitle: 'A Strategic Partner',
+  heroHighlight: 'Built for Growth',
+  heroSub:
+    'Gain executive leadership, operational expertise, and specialized execution teams without building an entire internal department.',
+  heroImage: a('/assets/photo-coaching-library.png'),
+  primaryCta: {
+    label: 'Book a Discovery Call',
+    href: 'mailto:hello@sugarandleather.com',
+  },
+  whatIs: {
+    eyebrow: 'What is a strategic partnership',
+    title: 'Designed for businesses that need more than advice.',
+    body: 'A Strategic Partnership is designed for businesses that need more than advice. Rather than hiring multiple executives, agencies, and contractors, organizations partner with Sugar & Leather to gain access to executive guidance and dedicated execution pods that work together toward clearly defined growth objectives.',
+    body2:
+      'We become an extension of your leadership team while helping drive measurable outcomes.',
+    image: a('/assets/photo-night-work.png'),
+    reverse: false,
+  },
+  process: {
+    eyebrow: 'How it works',
+    title: 'From assessment to execution',
+    steps: [
+      {
+        num: '01',
+        title: 'Business Assessment',
+        description:
+          'We evaluate your goals, growth stage, operational maturity, and strategic priorities.',
+      },
+      {
+        num: '02',
+        title: 'Executive Alignment',
+        description:
+          'A dedicated executive team helps define priorities, KPIs, and growth initiatives.',
+      },
+      {
+        num: '03',
+        title: 'Pod Deployment',
+        description: 'Specialized pods are assembled based on your business needs.',
+      },
+      {
+        num: '04',
+        title: 'Execution & Optimization',
+        description:
+          'Teams execute initiatives while leadership continuously reviews performance and adjusts strategy.',
+      },
+    ],
+  },
+  executiveGuidance: {
+    eyebrow: 'Executive guidance layer',
+    title: 'Leadership before execution',
+    body: 'Every engagement is supported by experienced operators and executives who help guide decision-making, prioritize initiatives, and ensure alignment between strategy and execution.',
+    itemsLabel: 'Areas of focus',
+    items: [
+      'Growth Strategy',
+      'Revenue Planning',
+      'Operational Excellence',
+      'Organizational Design',
+      'Technology Adoption',
+      'Market Expansion',
+    ],
+  },
+  pods: {
+    eyebrow: 'The four strategic partnership pods',
+    title: 'Specialist teams. One partnership.',
+    items: [
+      {
+        title: 'Marketing Pod',
+        purpose: 'Build predictable demand and strengthen market presence.',
+        services: [
+          'Growth Strategy',
+          'Content Marketing',
+          'Campaign Management',
+          'Brand Development',
+          'Marketing Operations',
+          'Performance Reporting',
+        ],
+        icon: 'Megaphone',
+        href: '/strategic-partnerships/marketing-pod',
+      },
+      {
+        title: 'Sales Pod',
+        purpose: 'Create repeatable revenue systems and accelerate growth.',
+        services: [
+          'Sales Process Design',
+          'Outbound Systems',
+          'CRM Optimization',
+          'Pipeline Management',
+          'Revenue Operations',
+          'Sales Enablement',
+        ],
+        icon: 'Handshake',
+      },
+      {
+        title: 'Development Pod',
+        purpose: 'Turn ideas into products, systems, and scalable technology.',
+        services: [
+          'Software Development',
+          'Product Strategy',
+          'AI Implementation',
+          'Workflow Automation',
+          'Technical Architecture',
+          'Platform Development',
+        ],
+        icon: 'Code2',
+      },
+      {
+        title: 'Recruitment Pod',
+        purpose: 'Build teams capable of supporting long-term growth.',
+        services: [
+          'Talent Acquisition',
+          'Hiring Strategy',
+          'Recruitment Operations',
+          'Candidate Screening',
+          'Workforce Planning',
+          'Team Scaling',
+        ],
+        icon: 'UserPlus',
+      },
+    ],
+  },
+  idealPartners: {
+    eyebrow: 'Who this is for',
+    title: 'Ideal partners',
+    items: [
+      'Early-Stage Startups',
+      'Venture-Backed Companies',
+      'Scaling Businesses',
+      'Innovation-Focused Organizations',
+      'Founder-Led Companies',
+      'Growth-Stage Enterprises',
+    ],
+  },
+  engagementModels: {
+    eyebrow: 'Engagement models',
+    title: 'A partnership shape for every stage',
+    items: [
+      {
+        title: 'Advisory + Pod',
+        description: 'Executive guidance combined with a single execution pod.',
+      },
+      {
+        title: 'Multi-Pod Partnership',
+        description: 'Multiple pods working together under a unified growth strategy.',
+      },
+      {
+        title: 'Embedded Growth Team',
+        description:
+          'A fully integrated leadership and execution structure operating as an extension of your business.',
+      },
+    ],
+  },
+  outcomes: {
+    eyebrow: 'Expected outcomes',
+    title: 'What changes when the model works',
+    items: [
+      'Faster execution',
+      'Improved operational efficiency',
+      'Stronger revenue systems',
+      'Better hiring outcomes',
+      'Clear strategic direction',
+      'Sustainable business growth',
+    ],
+  },
+  cta: {
+    title: 'Build faster with',
+    highlight: 'the right partner',
+    sub: 'Access leadership, execution, and specialized expertise through a single strategic partnership designed around your growth objectives.',
+    primaryLabel: 'Schedule a Discovery Session',
+    primaryHref: 'mailto:hello@sugarandleather.com',
+    secondaryLabel: 'Explore the ecosystem',
+    secondaryHref: '/#ecosystem',
+  },
+};

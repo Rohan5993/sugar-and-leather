@@ -16,7 +16,7 @@ export default function ProcessSection({ process, tone = 'dark' }) {
             </SplitText>
           </div>
         </div>
-        <ol className="process-grid">
+        <ol className={`process-grid${process.steps.length === 4 ? ' process-grid--quad' : ''}`}>
           {process.steps.map((step, i) => (
             <Reveal as="li" className="process-step" key={step.num} delay={i}>
               <span className="process-num">{step.num}</span>

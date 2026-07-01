@@ -21,6 +21,11 @@ export default function ExpertiseSection({ expertise, tone = 'light' }) {
             ) : null}
           </div>
         </div>
+        {expertise.itemsLabel ? (
+          <Reveal as="p" className="expertise-items-label" delay={1}>
+            {expertise.itemsLabel}
+          </Reveal>
+        ) : null}
         <ul className="expertise-grid">
           {expertise.items.map((item, i) => (
             <Reveal as="li" className="expertise-chip" key={item} delay={i % 6}>

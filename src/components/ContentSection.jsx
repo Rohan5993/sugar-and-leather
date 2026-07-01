@@ -3,7 +3,7 @@ import Reveal from './ui/Reveal';
 import SplitText from './ui/SplitText';
 
 export default function ContentSection({ section, tone = 'dark' }) {
-  const { eyebrow, title, body, bullets, image, reverse } = section;
+  const { eyebrow, title, body, body2, bullets, image, reverse } = section;
 
   return (
     <section
@@ -19,6 +19,11 @@ export default function ContentSection({ section, tone = 'dark' }) {
             <Reveal as="p" className="page-body" delay={2}>
               {body}
             </Reveal>
+            {body2 ? (
+              <Reveal as="p" className="page-body" delay={2}>
+                {body2}
+              </Reveal>
+            ) : null}
             {bullets?.length ? (
               <ul className="page-bullets">
                 {bullets.map((item, i) => (
