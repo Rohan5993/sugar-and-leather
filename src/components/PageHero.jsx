@@ -25,12 +25,14 @@ export default function PageHero({
   compact = false,
   fullViewport = false,
   stackedTitle = false,
+  extraClass = '',
 }) {
   const heroClass = [
     'page-hero',
     'surface-dark',
     compact && 'page-hero--compact',
     fullViewport && 'page-hero--viewport',
+    extraClass,
   ]
     .filter(Boolean)
     .join(' ');

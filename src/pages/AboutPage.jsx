@@ -20,6 +20,7 @@ export default function AboutPage() {
         primaryAction={hero.primaryAction}
         secondaryAction={hero.secondaryAction}
         fullViewport
+        extraClass="page-hero--about"
       />
 
       <div className="about-hero-divider" aria-hidden="true" />
@@ -47,6 +48,19 @@ export default function AboutPage() {
               <p className="about-name-card-body">{name.leather.body2}</p>
             </Reveal>
           </div>
+          {name.together ? (
+            <>
+              <Reveal className="about-name-together-wrap" delay={2}>
+                <div className="about-name-together-box">
+                  <p className="about-name-together-brand">{name.together.brand}</p>
+                  <p className="about-name-together-lead">{name.together.lead}</p>
+                  <p className="about-name-together-tag">{name.together.tag}</p>
+                  <p className="about-name-together-body">{name.together.body}</p>
+                </div>
+              </Reveal>
+              <div className="about-name-rule about-name-rule--below-together" aria-hidden="true" />
+            </>
+          ) : null}
         </div>
       </section>
 
@@ -60,6 +74,7 @@ export default function AboutPage() {
               <div className="about-mv-main">
                 <h2 className="display about-mv-title">{mission.title}</h2>
                 <p className="about-mv-body">{mission.body}</p>
+                {mission.body2 ? <p className="about-mv-body">{mission.body2}</p> : null}
               </div>
             </Reveal>
             <div className="about-mv-divider" aria-hidden="true" />
@@ -68,10 +83,17 @@ export default function AboutPage() {
                 <Eyebrow>{vision.eyebrow}</Eyebrow>
               </div>
               <div className="about-mv-main">
-                <h2 className="display about-mv-title">
-                  <span className="serif-i">{vision.title}</span>
+                <h2 className="display about-mv-title about-mv-title--vision">
+                  <span className="serif-i">
+                    {vision.title}
+                    <br />
+                    {vision.titleLine2}
+                    <br />
+                    {vision.titleLine3}
+                  </span>
                 </h2>
                 <p className="about-mv-body">{vision.body}</p>
+                {vision.body2 ? <p className="about-mv-body">{vision.body2}</p> : null}
               </div>
             </Reveal>
             <div className="about-mv-end-rule" aria-hidden="true" />
@@ -108,21 +130,25 @@ export default function AboutPage() {
       <section className="section page-philosophy">
         <div className="wrap">
           <Reveal as={Eyebrow}>{philosophy.eyebrow}</Reveal>
-          <SplitText as="h2" className="display" style={{ marginTop: 22 }}>
+          <SplitText as="h2" className="display philosophy-title">
             {philosophy.title}
+            {philosophy.titleLine2 ? (
+              <>
+                <br />
+                {philosophy.titleLine2}
+              </>
+            ) : null}
           </SplitText>
           <Reveal as="p" className="page-body page-body--wide" delay={2}>
             {philosophy.body}
-          </Reveal>
-          <Reveal as="p" className="page-body page-body--wide" delay={3}>
-            {philosophy.body2}
           </Reveal>
           <div className="philosophy-links">
             {philosophy.cards.map((card, i) => (
               <Reveal delay={i + 2} key={card.name}>
                 <Link to={card.href} className="philosophy-link">
                   <span className="philosophy-link-name">{card.name}</span>
-                  <span className="philosophy-link-desc">{card.desc}</span>
+                  <span className="philosophy-link-tagline">{card.desc}</span>
+                  {card.body ? <span className="philosophy-link-body">{card.body}</span> : null}
                 </Link>
               </Reveal>
             ))}

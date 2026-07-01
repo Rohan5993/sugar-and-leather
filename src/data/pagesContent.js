@@ -356,9 +356,9 @@ export const PRODUCT_PAGES = {
 export const ABOUT_PAGE = {
   hero: {
     eyebrow: 'About the firm',
-    title: 'Built. Not given.',
-    highlight: 'Human at the core.',
-    sub: 'Sugar & Leather exists for leaders who refuse to choose between ambition and humanity — especially as artificial intelligence reshapes what leadership demands.',
+    title: 'Built through pressure.',
+    highlight: 'Led with humanity.',
+    sub: 'At Sugar & Leather, we help leaders navigate this transition with clarity, combining strategic thinking, human judgment, and AI-enabled execution to build businesses that are prepared for what comes next.',
     image: a('/assets/photo-coaching-library.png'),
     primaryAction: {
       label: 'Book a call',
@@ -375,53 +375,84 @@ export const ABOUT_PAGE = {
     titleLine2: 'A philosophy.',
     sugar: {
       title: 'Sugar',
-      body: 'Creativity, innovation, warmth, and joy.',
+      body: 'Warmth is not weakness.',
       body2:
-        'The part that builds trust, connection, and human resonance, in every room, every pitch, every product we touch.',
+        'It is trust earned through listening, curiosity before certainty, and the belief that every meaningful transformation begins with people. We build with empathy, because technology only creates value when it serves the humans behind it.',
     },
     leather: {
       title: 'Leather',
-      body: 'Strength, not rigid like steel, but flexible, durable, and earned.',
+      body: 'Resilience is not rigidity.',
       body2:
-        'The part that shows up under pressure, navigates complexity, and builds what lasts.',
+        'It is the discipline to make difficult decisions, the structure to execute consistently, and the courage to lead when the path ahead is uncertain. We bring clarity where complexity has taken hold.',
+    },
+    together: {
+      brand: 'Sugar & Leather',
+      lead: 'Together, they define how we work.',
+      tag: 'Human-centered. Technology-enabled.',
+      body: 'Not because AI should replace human capability, but because it should expand it.',
     },
   },
   mission: {
     eyebrow: 'Mission',
-    title: 'To humanize artificial intelligence by staying deeply human ourselves',
-    body: 'We believe the organizations that will matter in the next decade will be led by people who can hold complexity without losing themselves. Our mission is to build that capacity — one leader, one team, one decision at a time.',
+    title: 'Helping businesses find direction.',
+    body: 'Technology has made almost everything possible. Knowing what matters has become the harder challenge.',
+    body2:
+      'Our work begins long before implementation. We help leadership teams uncover where meaningful leverage exists, align strategy with execution, and introduce intelligent systems only when they strengthen the business, not distract from it.',
   },
   vision: {
     eyebrow: 'Vision',
-    title: 'A world where power and humanity are not traded against each other',
-    body: 'We see a future where AI amplifies judgment rather than replacing it — where boards demand clarity, teams move with integrity, and the most senior leaders remain the most human in the room.',
+    title: 'Building organisations',
+    titleLine2: 'that remain unmistakably human',
+    titleLine3: 'in an increasingly intelligent world.',
+    body: 'We believe the strongest companies of the next decade won\'t simply adopt AI. They\'ll build cultures where human judgment, technological capability, and disciplined execution reinforce one another.',
+    body2:
+      'The future doesn\'t belong to businesses with the most technology. It belongs to those that know why they\'re using it.',
   },
   leadership: {
     eyebrow: 'Leadership',
-    title: 'Vivienne Marchetti',
-    role: 'Founder & Principal Coach',
+    title: 'Troy Cunningham-Jackson & Audrey Cunningham-Jackson',
+    role: 'Founders & Strategic Partners',
     quote:
-      'The leaders I admire most were never the loudest. They stayed human when the pressure said otherwise.',
-    body: 'Vivienne founded Sugar & Leather after two decades advising and coaching at the intersection of technology, governance, and executive transformation. She works directly with a small number of clients each year — by design.',
+      'Pressure doesn\'t reveal character. It reveals preparation. Our responsibility is to help leaders build organisations that remain thoughtful, decisive, and deeply human, especially when the stakes are highest.',
+    body: 'Sugar & Leather operates as a deliberately high-touch advisory practice. We work selectively, partnering closely with leadership teams to solve complex business challenges through strategic guidance, embedded expertise, and long-term capability building. Every engagement is designed around the organisation, not around a predefined service.',
     image: a('/assets/photo-coaching-sage.png'),
   },
   philosophy: {
     eyebrow: 'Ecosystem philosophy',
-    title: 'Four practices, one fire',
-    body: 'AriesAI, SequenceAI, Compass, and Lexicon are not product lines. They are intensities of the same work — coaching the human, advising the strategy, building fluency, and forging teams that hold under pressure.',
-    body2:
-      'Most firms sell packages. We enter relationships. The ecosystem exists so that as your context shifts, the form of our work can shift with you — without starting over with strangers.',
+    title: 'Four pillars.',
+    titleLine2: 'One direction.',
+    body: 'Businesses need leadership, execution, technology, and opportunity working together, not in silos. Every engagement crosses all four pillars, so strategy and capability evolve as one ecosystem.',
     cards: [
-      { name: 'AriesAI', href: '/practices/atelier', desc: 'One leader, one coach' },
-      { name: 'SequenceAI', href: '/practices/forge', desc: 'Teams under pressure' },
-      { name: 'Compass', href: '/practices/compass', desc: 'AI strategy embedded' },
-      { name: 'Lexicon', href: '/practices/lexicon', desc: 'Executive fluency' },
+      {
+        name: 'Capital Access',
+        href: '/capital-access',
+        desc: 'Unlock the resources to move forward.',
+        body: 'From grants and funding pathways to investment readiness, we help businesses access the capital needed to support their next stage of growth.',
+      },
+      {
+        name: 'Strategic Partnerships',
+        href: '/strategic-partnerships',
+        desc: 'Leadership that becomes part of your business.',
+        body: 'Our Sales, Marketing, Recruitment, and Engineering Pods work alongside your team, providing strategic direction and embedded execution where it matters most.',
+      },
+      {
+        name: 'Innovation & Technology',
+        href: '/aries-platform',
+        desc: 'Technology with purpose.',
+        body: 'Whether through Aries AI, Sequence AI, automation, or AI strategy, we introduce technology where it creates measurable leverage, never complexity.',
+      },
+      {
+        name: 'Community',
+        href: '/advanced-tech',
+        desc: "Growth doesn't happen in isolation.",
+        body: 'Our communities bring together founders, operators, coaches, and leaders who learn from one another, challenge ideas, and create opportunities beyond a single engagement.',
+      },
     ],
   },
   cta: {
-    title: 'Some companies are given.',
-    highlight: 'You will be built.',
-    sub: 'If our philosophy resonates, begin with a conversation. Introductions are limited, and considered.',
+    title: 'Some companies are scaled.',
+    highlight: 'The best are built.',
+    sub: 'Human judgment. Intelligent technology. Enduring businesses.',
     primaryLabel: 'Book a call',
     primaryHref: 'mailto:hello@sugarandleather.com',
     secondaryLabel: 'Explore practices',
