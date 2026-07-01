@@ -915,7 +915,6 @@ body.cursor-hot .cursor { width: 5px; height: 5px; }
   text-align: center;
   background: var(--lavender);
   border: 1px solid rgba(61, 51, 71, 0.18);
-  border-radius: var(--radius-lg);
 }
 .about-name-together-brand {
   margin: 0;
